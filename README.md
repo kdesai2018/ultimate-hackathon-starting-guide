@@ -14,7 +14,7 @@ Our entire team is currently quarantining at home. With this abundance of free t
 
 
 ## I found a mistake // How can I get involved?
-This guide is still in its early stages. If you find a mistake and/or omisison, please fork this repo and create a [pull request.] (https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
+This guide is still in its early stages. If you find a mistake and/or omisison, please fork this repo and create a [pull request.] (https://help.github.com/en/github/getting-started-with-github/fork-a-repo). Make sure you use [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links) to edit the various README files we have scattered through the repo. 
 
 
 
