@@ -10,7 +10,7 @@ In the various folders, you will find tips and resources for a variety of topics
 This resource was made by [Freetail Hackers](http://freetailhackers.com/) at the [University of Texas at Austin](utexas.edu). We are a multidisciplinary student organization organizes HackTX annually. :heart:
 
 ## What was the inspiration for this guide?
-Our entire team is currently quarantining at home. With this abundance of free time, we decided to create a tool that would be useful for hackathons attendees around the world. 
+Our entire team is currently quarantining at home. With this abundance of free time, we decided to create a tool that would be useful for hackathons attendees and organizers around the world. 
 
 
 ## I found a mistake // How can I get involved?
