@@ -23,7 +23,7 @@ Most hackathons are held in a big room of some sort with tables for teams to be 
 - Any other equipment you deem necessary for your project (i.e. a drawing tablet)
 - A blanket and/or sweatshirt (it might be cold)
 - Most of all, bring energy, ideas, and a great attitude so you can have tons of fun!
-
+Sometimes a hackathon will have a "hardware lab", where you can check out components like Arduinos, VR headsets and more! Check with the hackathon organizers for more details
 #### What can I work on?
 You can work on anything that uses technology! This can be a website/app, a video game, a VR/AR app, etc. Use your imagination to come up with a unique tech project! 
 
