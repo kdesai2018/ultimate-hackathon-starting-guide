@@ -49,8 +49,10 @@ You can use either conda environments, or virtual environments. Conda is more st
 [virtualenv tutorial](https://www.pythonforbeginners.com/basics/how-to-use-python-virtualenv) - just follow the instructions on your terminal
 [official python docs](https://virtualenv.pypa.io/en/latest/)
 
-#### conda
-[installing conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/) - installing miniconda works too, especially if you don't need all the features [conda](https://stackoverflow.com/questions/45421163/anaconda-vs-miniconda), but I'd recommend insalling the full anaconda package to make your life easier. 
+#### Anaconda
+[installing conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/) - installing miniconda works too, especially if you don't need all the features 
+
+[conda](https://stackoverflow.com/questions/45421163/anaconda-vs-miniconda), but I'd recommend insalling the full anaconda package to make your life easier. 
 
 [setting up conda env](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/)
 
