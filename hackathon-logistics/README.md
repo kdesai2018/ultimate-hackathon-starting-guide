@@ -29,3 +29,5 @@ You can work on anything that uses technology! This can be a website/app, a vide
 
 #### Where do I start?
 It can be very overwhelming to go into a hackathon for the first time. With so many people everywhere and things going on, it's hard to figure out where to begin and what to do with your time. Here are my suggestions. First, form a team and brainstorm a project idea. Then, figure out how you are going to create that project. Think about what technologies y'all will need, figure out a good delegation of who should do what, break down the project into achievable steps and focus on create a minimal viable product (MVP). After this, your team can start hacking! Most of the time this means digging through the internet to learn more about the tech you need or finding examples that can help you achieve your goals.
+
+Check out the ideation page in this guide for a more detailed insight into the process. 
