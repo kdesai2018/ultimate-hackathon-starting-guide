@@ -18,6 +18,7 @@ Most hackathons are held in a big room of some sort with tables for teams to be 
 
 #### What should I bring?
 - Yourself
+- A government or school-issued ID card
 - Your laptop and chargers
 - Any other equipment you deem necessary for your project (i.e. a drawing tablet)
 - A blanket and/or sweatshirt (it might be cold)
