@@ -20,14 +20,16 @@ Most hackathons are held in a big room of some sort with tables for teams to be 
 - Yourself
 - A government or school-issued ID card
 - Your laptop and chargers
-- Any other equipment you deem necessary for your project (i.e. a drawing tablet)
+- Any other equipment you deem necessary for your project (i.e. a drawing tablet)*
 - A blanket and/or sweatshirt (it might be cold)
 - Most of all, bring energy, ideas, and a great attitude so you can have tons of fun!
-Sometimes a hackathon will have a "hardware lab", where you can check out components like Arduinos, VR headsets and more! Check with the hackathon organizers for more details
+
+*Keep in mind that sometimes a hackathon will have a "hardware lab", where you can check out components like Arduinos, VR headsets and more! Check with the hackathon organizers for more details
+
 #### What can I work on?
 You can work on anything that uses technology! This can be a website/app, a video game, a VR/AR app, etc. Use your imagination to come up with a unique tech project! 
 
 #### Where do I start?
 It can be very overwhelming to go into a hackathon for the first time. With so many people everywhere and things going on, it's hard to figure out where to begin and what to do with your time. Here are my suggestions. First, form a team and brainstorm a project idea. Then, figure out how you are going to create that project. Think about what technologies y'all will need, figure out a good delegation of who should do what, break down the project into achievable steps and focus on create a minimal viable product (MVP). After this, your team can start hacking! Most of the time this means digging through the internet to learn more about the tech you need or finding examples that can help you achieve your goals.
 
-Check out the ideation page in this guide for a more detailed insight into the process. 
+Check out the [ideation](https://github.com/kdesai2018/ultimate-hackathon-starting-guide/blob/master/ideation/README.md) page in this guide for a more detailed insight into the process. 
