@@ -19,7 +19,7 @@ Once you have Github Desktop installed, we can get started. Create a repository 
 
 Go ahead and add a file. It doesn't have to be code, Github supports uploading almost any type of file (.pdf, .py, .o, etc.). Once you have added a file to the repository folder, navigate back to Github Desktop. You need to **commit** your changes. Ideally, you want to commit ever so often when you are working on a project. Think of it like hitting "save" on a word document. That's not what really happens behind the scenes at all, but its a pretty basic analogy that lets you get past this initial hurdle. You will also have to enter a commit message on the desktop app. This isn't always required, but usually it helps your teammates know what changes you made. This might also come in handy if (or when) you accidentally save a bug, and need to **revert** back to an older version. Check out the "Where can I learn more?" section for a couple resources for this.
 
-Once you have committed your changes, you should **push** them. **Pushing** is when you send the changes you have made to the remote git repository. Remember this order - first you **commit**, then you **push**.
+Once you have committed your changes, you should **push** them. **Pushing** is when you send the local changes you have made on your computer to the remote git repository. Remember this order - first you **commit**, then you **push**.
 
 You're done! You just made a file, committed it, and pushed it to the remote repository. If you refresh the browser page that holds your online repo, you should see the file you made along with your unique commit message. 
 
