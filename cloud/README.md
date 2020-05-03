@@ -10,12 +10,22 @@ Cloud services are a way for us to obtain compute, storage, machine learning, an
 
 All three of these providers have their own consoles, documentation, and services, but they still allow you to do the same thing: buy a computer short-term that resides somewhere far away from you. The biggest types of services that cloud offers are compute and storage. Compute means the ability to buy a computer to perform a specific task, and storage means the ability to buy a database where you can store a large amount of information in a secure manner. All three providers also have services for many other functions such as game development, machine learning, robotics, blockchain, you name it.
 
-## Which provider should I use?
+### Which provider should I use?
 There are many factors to consider when deciding on a cloud provider, but since they all do virtually the same thing, it's just a matter of sticking with one and travelling down its learning curve. If you have credits for a specific provider, which is the case in many hackathons, consider using that one so you don't have to worry about costs. AWS also has a [free tier](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc) for all first-time users that lasts for a whole year, and [Microsoft](https://azure.microsoft.com/en-us/free/) and [Google](https://cloud.google.com/free/) have similar options as well. I myself am partial to AWS, but I recommend doing some exploration and picking the cloud provider that sounds the best to you! Once you choose one, a whole realm of possibilities will be opened to you.
 
-## Documentation
+### Documentation
 Whenever you have a question about the cloud, the most important place to check for an answer is the documentation. The documentation for the three major providers is linked here:
 
 * [AWS Docs](https://docs.aws.amazon.com/)
 * [Azure Docs](https://docs.microsoft.com/en-us/azure/?product=featured)
 * [GCP Docs](https://cloud.google.com/docs)
+
+
+## AWS Specific Services
+For this section, I'll dive into some of the most helpful AWS services for beginners. While there are plenty of services that anybody can just pick up and use, these are the ones that I feel are most used in the industry, and may be helpful to look into for your project as well.
+
+### Elastic Compute Cloud (EC2)
+By far the most important service in the AWS console, [EC2](https://aws.amazon.com/ec2/) allows users to obtain compute power by simply specifying a machine configuration and waiting a few minutes. With this service, you can go in and create a new instance, specifying everything you need in terms of RAM or storage space, just like picking out a new laptop. When you're in the EC2 menu, simply hit **Running instance -> Launch Instance** and follow the prompts. When your instance is done launching, you can just hit the checkbox next to it and click the **Connect** button at the top, follow the prompts, and voila! You now have remote access to a computer somewhere in the world, and you can make it do whatever you like!
+
+### Simple Storage Service (S3)
+[S3](https://aws.amazon.com/s3/) is exactly what it sounds like: a simple way to store whatever documents or files you may want to on the cloud. Think of it like a slightly higher-tech Google Drive, except you can access the objects directly by typing in a URL. S3 has a large number of applications in terms of linking with other AWS services, but you can also use it to do many things on its own. For example, you can host an image in a public S3 bucket for use in any website you make, or my favorite use for it is to simply host a static website. In order to do this, you'll need hit **Create bucket** and follow the prompts. When you've created your bucket, click on the name and find the **Permissions** tab. You will need to set the **Access Control List** to allow anyone to publicly access the objects in your bucket, and you will need to change the **Bucket Policy** as well. Feel free to use the bucket policy template in this repo. If you did everything correctly, you should be able to access your website by simply clicking the URL for your HTML page!
