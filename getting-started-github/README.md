@@ -8,7 +8,7 @@ Programmers use Git to store multiple versions of their code (hence the name Ver
 Your code lives in this object called a **repository** (repo). Within that repository, you can have branches, issues, pull requests and a LOT more. Don't get overwhelmed though, for a hackathon you don't need to use all these features. Just follow along with this guide, and we'll have you and your team up and running in no time. 
 
 ## How do I set it up on my computer?
-Quick side note: [This official tutorial](https://help.github.com/en/github/getting-started-with-github/set-up-git) is pretty good at explaining how to use certain features of Github. However, I didn't really think it was very useful when I was a beginner. I'll do my best to break down essential steps in this guide, but refer to the tutorial to see specific buttons and stuff you have to click on. 
+Quick side note: [This official tutorial](https://help.github.com/en/github/getting-started-with-github/set-up-git) is pretty good at explaining how to use certain features of Github. However, I didn't really think it was very useful when I was a beginner. I'll do my best to break down essential steps in this guide, but refer to the tutorial to see specific buttons to click on. 
 
 First of all, register for an account on the [website](github.com). Next, if you are a new to git, I'd recommend downloading the desktop version of github just to help you get everything on a GUI (Graphical User Interface). As you get more advanced, you might find yourself ditching the GUI all together in favor of the terminal/command line, but we don't need to worry about that yet. 
 
