@@ -27,6 +27,21 @@ For my teams, we have one repo and everyone is added on as a [collaborator](http
 
 Remember to **pull** changes from the remote branch to your local copy whenever your teammate makes a change. This ensures that everyone has the most up to date version of the code, and no one is working on an already solved bug. 
 
+## What are "Merge Conflicts and how do I fix them?
+First of all, take a deep breath. While merge conflicts may look complex, they're actually caused by a pretty simple reason. This is when your teammate and you both push conflicting changes to the same branch. A couple cases:
+(You are "you" and your teammate is A)
+
+1. Both of you are working on the master branch. There is a file - app.py - already checked into github. A changes function foo() in app.py, and pushs this change to the remote master branch (seen on your browser). However, you don't realize they pushed this change (aka you don't **pull** their changes), and delete function foo(). When you attempt to push your change, the Github server will spit out a "merge conflict...." error.
+
+2. Both of you are using pull requests and merge requests (like real hackers). However, if A merges a change to foo(), and then you attempt to merge a pull request where you delete foo(), you will once again see a merge conflict. 
+
+It's a lot easier to fix merge conflicts if you're using a git-integrated IDE. Luckily for you, most modern IDE's are integrated with git, and you can also get git plugins for vim and emacs (eew). I'm going to let [this tutorial](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-on-github) explain how to fix merge conflicts in the second case above. 
+
+However, if you both are working on master, its not so easy to fix. [This tutorial](https://rollout.io/blog/resolve-github-merge-conflicts/) does a pretty good job explaining the official ways to fix your merge conflicts. However, if you aren't used to git on the terminal this might get a little complicated. 
+
+A (very hacky) way of fixing the first case of merge conflicts is as follows. For larger edits, you're better off using the last tutorial I posted (with the terminal instructions). How
+
+
 ## Where can I learn more?
 This is only the tip of the iceberg when it comes to Git and Github. Once you gain experience and confidence, you'll find yourself using git functions like rebase, fetch, diff, tag and config. To learn more about these, here are a couple tutorials I'd recommend. 
 
