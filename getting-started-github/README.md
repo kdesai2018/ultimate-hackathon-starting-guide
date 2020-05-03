@@ -1,9 +1,9 @@
 # Getting started with Github
 
-![XKCD Git Comic](https://imgs.xkcd.com/comics/git.png "Source: xkcd.com)
+![XKCD Git Comic](https://imgs.xkcd.com/comics/git.png "source: xkcd.com")
 
 ## What is Github?
-**Git** is a distributed version-control system created by Linux Torvalds (creator of the Linux OS). **GitHub** is a company headquartered in San Francisco, CA that provides end-to-end git hosting. Knowing the difference between these two isn't integral, but might prevent you from making an embarassing mistake. 
+**Git** is a distributed version-control system created by Linux Torvalds (creator of the Linux OS). **GitHub** is a company headquartered in San Francisco, CA that provides end-to-end git hosting. Knowing the difference between these two isn't integral, but might help you google stuff better. 
 
 Programmers use Git to store multiple versions of their code (hence the name Version Control System (VCS)). Github is the most popular platform to host these revisions. In fact, you're looking at this code on a Github repository right now! Github will allow you to share your code, collaborate with other developers and test certain aspects of your codebase! There are competitors to Github out there (like Bitbucket), but since I haven't used them, I won't comment on their functionality/usefulness. For hackathon purposes, Github can be really useful for collaborating with teammates and making sure changes don't get lost.
 
@@ -19,7 +19,7 @@ Once you have Github Desktop installed, we can get started. Create a repository 
 
 Go ahead and add a file. It doesn't have to be code, Github supports uploading almost any type of file (.pdf, .py, .o, etc.). Once you have added a file to the repository folder, navigate back to Github Desktop. You need to **commit** your changes. Ideally, you want to commit ever so often when you are working on a project. Think of it like hitting "save" on a word document. That's not what really happens behind the scenes at all, but its a pretty basic analogy that lets you get past this initial hurdle. You will also have to enter a commit message on the desktop app. This isn't always required, but usually it helps your teammates know what changes you made. This might also come in handy if (or when) you accidentally save a bug, and need to **revert** back to an older version. Check out the "Where can I learn more?" section for a couple resources for this.
 
-Once you have committed your changes, you should **push** them. **Pushing** is when you send the changes you have made to the remote git repository. Remember this order - first you **commit**, then you **push**.
+Once you have committed your changes, you should **push** them. **Pushing** is when you send the local changes you have made on your computer to the remote git repository. Remember this order - first you **commit**, then you **push**.
 
 You're done! You just made a file, committed it, and pushed it to the remote repository. If you refresh the browser page that holds your online repo, you should see the file you made along with your unique commit message. 
 
@@ -28,9 +28,9 @@ This is a little bit of an advanced topic, but its integral if you are working o
 
 For my teams, we have one repo and everyone is added on as a [collaborator](https://help.github.com/en/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository). Next, we have everyone make their own branch and we keep the **master** branch separate. This makes sure no one pushes untested code directly to our current product. Everyone pushes their changes to their own branch (as detailed above), and then makes a **pull request** to master. To learn how to do this, follow [this](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request). This way, everyone can review the proposed changes before **merging** (combining) the changes with the main master branch. 
 
-Remember to **pull** changes from the remote branch to your local copy whenever your teammate makes a change. This ensures that everyone has the most up to date version of the code, and no one is working on an already solved bug. 
+Remember to **pull** changes from the remote branch to your local copy whenever your teammate makes a change. The pull command pretty much just copies whatever changes have been made on the remote branch you are pulling from, onto your local device. This ensures that everyone has the most up to date version of the code, and no one is working on an already solved bug or code someone else has changed. 
 
-## What are "Merge Conflicts and how do I fix them?
+## What are "Merge Conflicts" and how do I fix them?
 First of all, take a deep breath. While merge conflicts may look complex, they're actually caused by a pretty simple reason. This is when your teammate and you both push conflicting changes to the same branch. A couple cases:
 (You are "you" and your teammate is A)
 
