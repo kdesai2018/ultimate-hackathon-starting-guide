@@ -1,4 +1,7 @@
 # Getting started with Github
+
+![XKCD Git Comic](https://imgs.xkcd.com/comics/git.png "Source: xkcd.com)
+
 ## What is Github?
 **Git** is a distributed version-control system created by Linux Torvalds (creator of the Linux OS). **GitHub** is a company headquartered in San Francisco, CA that provides end-to-end git hosting. Knowing the difference between these two isn't integral, but might prevent you from making an embarassing mistake. 
 
@@ -39,7 +42,15 @@ It's a lot easier to fix merge conflicts if you're using a git-integrated IDE. L
 
 However, if you both are working on master, its not so easy to fix. [This tutorial](https://rollout.io/blog/resolve-github-merge-conflicts/) does a pretty good job explaining the official ways to fix your merge conflicts. However, if you aren't used to git on the terminal this might get a little complicated. 
 
-A (very hacky) way of fixing the first case of merge conflicts is as follows. For larger edits, you're better off using the last tutorial I posted (with the terminal instructions). How
+A (very hacky) way of fixing the first case of merge conflicts is as follows. For larger edits, you're better off using the last tutorial I posted (with the terminal instructions). However, here's a quick shortcut for smaller conflicts. 
+1. Copy your modified code in app.py into a new file (eg: temp.py), that is untracked by github
+2. Open up a terminal and navigate to the relevant git repository. 
+3. Run the command: 'git stash' 
+4. Run the command: 'git pull' when you are in the same repository. 
+5. Manually reapply the changes you copied over to temp,py.
+6. Run the typical commands: 'git add .', 'git commit -m "fixing merge conflicts"', 'git push'
+
+Note that this solution is only useful if you've made very minor changes to app.py, and you have some basic familiarity with the terminal. If this looks too daunting, your best bet may be to ask a mentor at the hackathon or attempt to follow one of the guides above. 
 
 
 ## Where can I learn more?
