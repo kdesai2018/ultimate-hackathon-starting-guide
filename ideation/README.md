@@ -1,6 +1,8 @@
 # How to come up with an idea
 
-Sometimes coming up with an idea for a hackathon can be really difficult. However, the good thing to keep in mind is that this is a project to be made in a limited amount of time so it doesn't have to be the perfect idea and can be something that you build off of in the future. It's a good opportunity to try and learn new things with little being risked. Because at hackathons you can work on anything that uses technology, like website/app, a video game, a VR/AR app, etc. there are endless options. 
+Coming up with an idea for a hackathon can be really difficult. People often worry that their idea is too "silly" or too basic. However, the thing to keep in mind is that everyone is building a project in a limited amount of time, so your idea doesn't have to be perfect. Most hackathon projects are technically unfinished in terms of edge cases and extended functionality. A lot of people take their idea and build off on it after the hackathon. 
+
+Consider this good opportunity to try and learn new things with no risked. At hackathons you can work on any kind of technology based project. People build everything from websites, mobile apps, video games and VR/AR apps - you have a world of options!
 
 #### Narrowing down topics 
 What helps me is narrowing down some broader category I want to create a project in. Some hackathons will have a theme or categories you can submit too which can help narrow down the ideas. Others will have company sponsored topics that typically have some kind of specific project they are judging for. It can be helpful to look over these when you're looking for an idea.
