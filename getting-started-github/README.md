@@ -50,7 +50,7 @@ A (very hacky) way of fixing the first case of merge conflicts is as follows. Fo
 5. Manually reapply the changes you copied over to temp,py.
 6. Run the typical commands: 'git add .', 'git commit -m "fixing merge conflicts"', 'git push'
 
-Note that this solution is only useful if you've made very minor changes to app.py, and you have some basic familiarity with the terminal. If this looks too daunting, your best bet may be to ask a mentor at the hackathon or attempt to follow one of the guides above. 
+Note that this solution is only useful if you've made very minor changes to app.py, and you have some basic familiarity with the [terminal](https://github.com/kdesai2018/ultimate-hackathon-starting-guide/blob/master/getting-started-terminal/README.md). If this looks too daunting, your best bet may be to ask a mentor at the hackathon or attempt to follow one of the guides above. 
 
 
 ## Where can I learn more?
