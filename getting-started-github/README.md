@@ -4,7 +4,7 @@
 
 Programmers use Git to store multiple versions of their code (hence the name Version Control System (VCS)). Github is the most popular platform to host these revisions. In fact, you're looking at this code on a Github repository right now! Github will allow you to share your code, collaborate with other developers and test certain aspects of your codebase! There are competitors to Github out there (like Bitbucket), but since I haven't used them, I won't comment on their functionality/usefulness. For hackathon purposes, Github can be really useful for collaborating with teammates and making sure changes don't get lost.
 
-## How is github organized?
+## How is Github organized?
 Your code lives in this object called a **repository** (repo). Within that repository, you can have branches, issues, pull requests and a LOT more. Don't get overwhelmed though, for a hackathon you don't need to use all these features. Just follow along with this guide, and we'll have you and your team up and running in no time. 
 
 ## How do I set it up on my computer?
