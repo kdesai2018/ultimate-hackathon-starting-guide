@@ -28,7 +28,7 @@ This is a little bit of an advanced topic, but its integral if you are working o
 
 For my teams, we have one repo and everyone is added on as a [collaborator](https://help.github.com/en/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository). Next, we have everyone make their own branch and we keep the **master** branch separate. This makes sure no one pushes untested code directly to our current product. Everyone pushes their changes to their own branch (as detailed above), and then makes a **pull request** to master. To learn how to do this, follow [this](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request). This way, everyone can review the proposed changes before **merging** (combining) the changes with the main master branch. 
 
-Remember to **pull** changes from the remote branch to your local copy whenever your teammate makes a change. This ensures that everyone has the most up to date version of the code, and no one is working on an already solved bug. 
+Remember to **pull** changes from the remote branch to your local copy whenever your teammate makes a change. The pull command pretty much just copies whatever changes have been made on the remote branch you are pulling from, onto your local device. This ensures that everyone has the most up to date version of the code, and no one is working on an already solved bug or code someone else has changed. 
 
 ## What are "Merge Conflicts and how do I fix them?
 First of all, take a deep breath. While merge conflicts may look complex, they're actually caused by a pretty simple reason. This is when your teammate and you both push conflicting changes to the same branch. A couple cases:
