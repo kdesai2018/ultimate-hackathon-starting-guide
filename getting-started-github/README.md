@@ -1,6 +1,6 @@
 # Getting started with Github
 
-![XKCD Git Comic](https://imgs.xkcd.com/comics/git.png "Source: xkcd.com)
+![XKCD Git Comic](https://imgs.xkcd.com/comics/git.png Source: xkcd.com)
 
 ## What is Github?
 **Git** is a distributed version-control system created by Linux Torvalds (creator of the Linux OS). **GitHub** is a company headquartered in San Francisco, CA that provides end-to-end git hosting. Knowing the difference between these two isn't integral, but might prevent you from making an embarassing mistake. 
