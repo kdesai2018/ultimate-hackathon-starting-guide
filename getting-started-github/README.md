@@ -3,7 +3,7 @@
 ![XKCD Git Comic](https://imgs.xkcd.com/comics/git.png "source: xkcd.com")
 
 ## What is Github?
-**Git** is a distributed version-control system created by Linux Torvalds (creator of the Linux OS). **GitHub** is a company headquartered in San Francisco, CA that provides end-to-end git hosting. Knowing the difference between these two isn't integral, but might prevent you from making an embarassing mistake. 
+**Git** is a distributed version-control system created by Linux Torvalds (creator of the Linux OS). **GitHub** is a company headquartered in San Francisco, CA that provides end-to-end git hosting. Knowing the difference between these two isn't integral, but might help you google stuff better. 
 
 Programmers use Git to store multiple versions of their code (hence the name Version Control System (VCS)). Github is the most popular platform to host these revisions. In fact, you're looking at this code on a Github repository right now! Github will allow you to share your code, collaborate with other developers and test certain aspects of your codebase! There are competitors to Github out there (like Bitbucket), but since I haven't used them, I won't comment on their functionality/usefulness. For hackathon purposes, Github can be really useful for collaborating with teammates and making sure changes don't get lost.
 
@@ -30,7 +30,7 @@ For my teams, we have one repo and everyone is added on as a [collaborator](http
 
 Remember to **pull** changes from the remote branch to your local copy whenever your teammate makes a change. The pull command pretty much just copies whatever changes have been made on the remote branch you are pulling from, onto your local device. This ensures that everyone has the most up to date version of the code, and no one is working on an already solved bug or code someone else has changed. 
 
-## What are "Merge Conflicts and how do I fix them?
+## What are "Merge Conflicts" and how do I fix them?
 First of all, take a deep breath. While merge conflicts may look complex, they're actually caused by a pretty simple reason. This is when your teammate and you both push conflicting changes to the same branch. A couple cases:
 (You are "you" and your teammate is A)
 
@@ -60,4 +60,4 @@ This is only the tip of the iceberg when it comes to Git and Github. Once you ga
 2. [Pretty comprehensive tutorials on git, but no github specific info](https://www.atlassian.com/git/tutorials). If you're using github, then these mostly serve to help you learn the theory behind git. 
 3. Cool interactive [tool](https://learngitbranching.js.org) hosted on....Github! HIGHLY RECOMMENDED for people confused by my rambling tutorial. 
 
-Before hopping too deep into any of these though, I'd recommend just going up and asking a mentor/company rep for help. Odds are that they use Github (or another git hosting service) at work, and can probably solve your problem within minutes. This will give you more time to focus on building.
+Before hopping too deep into any of these though, I'd recommend just going up and asking a mentor/company rep for help. Odds are that they use Github (or another git hosting service) at work, and can probably solve your problem within minutes. This will give you more time to focus on building. Git tends to be one of those things that has a high learning curve so don't be too distraught if it's confusing. It'll come much more naturally as you use it more!
