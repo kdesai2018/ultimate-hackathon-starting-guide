@@ -20,6 +20,9 @@ Whenever you have a question about the cloud, the most important place to check 
 * [Azure Docs](https://docs.microsoft.com/en-us/azure/?product=featured)
 * [GCP Docs](https://cloud.google.com/docs)
 
+#### Price Warning
+Cloud providers are notorious for taking your credit card information and charging you for services you may not know you need to pay for. As such, always make sure to consult the free tier links to make sure the service you are using is available for free. Alternatively, make sure to populate your account with credits **before** you start developing, and make use of budget services like [AWS Budgets](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-managing-costs.html) to set up alerts in case your costs go too high. 
+
 
 ## AWS Specific Services
 For this section, I'll dive into some of the most helpful AWS services for beginners. While there are plenty of services that anybody can just pick up and use, these are the ones that I feel are most used in the industry, and may be helpful to look into for your project as well.
