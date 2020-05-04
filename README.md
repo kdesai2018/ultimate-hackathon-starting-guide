@@ -1,4 +1,4 @@
-# ultimate-hackathon-starting-guide
+# Ultimate Hackathon Starting Guide
 
 ## What is this?
 The *Ultimate Hackathon Starting Guide* is an all-purpose, one-stop guide to hackathons. Whether you are a first time hacker or an experienced professional, we believe that this guide can help you build the best project possible!
