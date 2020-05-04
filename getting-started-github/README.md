@@ -40,15 +40,7 @@ First of all, take a deep breath. While merge conflicts may look complex, they'r
 
 It's a lot easier to fix merge conflicts if you're using a git-integrated IDE. Luckily for you, most modern IDE's are integrated with git, and you can also get git plugins for vim and emacs (eew). I'm going to let [this tutorial](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-on-github) explain how to fix merge conflicts in the second case above. 
 
-However, if you both are working on master, its not so easy to fix. [This tutorial](https://rollout.io/blog/resolve-github-merge-conflicts/) does a pretty good job explaining the official ways to fix your merge conflicts. However, if you aren't used to git on the terminal this might get a little complicated. 
-
-A (very hacky) way of fixing the first case of merge conflicts is as follows. For larger edits, you're better off using the last tutorial I posted (with the terminal instructions). However, here's a quick shortcut for smaller conflicts. 
-1. Copy your modified code in app.py into a new file (eg: temp.py), that is untracked by github
-2. Open up a terminal and navigate to the relevant git repository. 
-3. Run the command: `git stash`
-4. Run the command: `git pull` when you are in the same repository. 
-5. Manually reapply the changes you copied over to temp,py.
-6. Run the typical commands: `git add .`, `git commit -m "fixing merge conflicts"`, `git push`
+However, if you both are working on master, its not so easy to fix. [This tutorial](https://rollout.io/blog/resolve-github-merge-conflicts/) does a pretty good job explaining the official ways to fix your merge conflicts. For more complicated needs, I'd recommend asking a mentor at the hackathon or a more experienced hacker near you. Most people I've met at hackathons are really friendly, and won't hesitate to help you out if they can :smiley:
 
 Note that this solution is only useful if you've made very minor changes to app.py, and you have some basic familiarity with the [terminal](https://github.com/kdesai2018/ultimate-hackathon-starting-guide/blob/master/getting-started-terminal/README.md). If this looks too daunting, your best bet may be to ask a mentor at the hackathon or attempt to follow one of the guides above. 
 
