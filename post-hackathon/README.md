@@ -16,7 +16,7 @@ In the future if this project is ever referenced or developed again, the post-mo
 ## 2. Cost-Benefit Analysis
 Evaluate your project overall and create a comparison between the benefits that came from the experience in contrast to the negative experiences. What did you learn from the hackathon, what do you look forward to, and what could have made the experience more worthwile?
 
-If you worked on the project with a team, discuss with each other what each one liked and disliked about the event. Additionally, it is important to have an understanding of what is to come of this product, and what are the future plans regarding it?
+If you worked on the project with a team, discuss with each other what each one liked and disliked about the event. Additionally, it is important to have an understanding of what is to come of this product, and what the future plans are regarding it.
 
 ## 3. Blog / Recount your experience
 
