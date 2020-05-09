@@ -1,5 +1,5 @@
 # Post-Hackathon 
-Congrats you made it through the hackathon and you now have some working project! What should you do? Definitely DO NOT just make your project a history. Here are the steps that you should follow to make your experience worth your effort. 
+Congratulations! You made it through the hackathon and you have a (hopefully) working project! What should you do next? Definitely DO NOT just make your project a history. Here are the steps that you should follow to make your experience worth your effort. 
 
 ## 1. Post-Mortem
 
