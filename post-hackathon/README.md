@@ -4,7 +4,7 @@ Congratulations! You made it through the hackathon and you have a (hopefully) wo
 ## 1. Post-Mortem
 
 ### The Positives
-Make a list of everything that went right in this project so that it can be repeated next time. From the small-scale accomplishments to the large-scale accomplishments, each detail counts and is probably worth noting! This makes it easier next time when you want to add to the project, develop a similar project with more functionalities, or use it as reference in an internship, job, and/or another experience of applying the knowledge.
+Make a list of everything that went right in this project so that it can be repeated next time. From the small-scale accomplishments to the large-scale accomplishments, each detail counts and is probably worth noting! This makes it easier next time when you want to add to the project, develop a similar project with more functionalities, or use it as reference in any kind of interview.
 
 ### The Negatives
 
