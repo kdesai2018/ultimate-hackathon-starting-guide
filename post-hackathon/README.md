@@ -20,4 +20,6 @@ If you worked on the project with a team, discuss with each other what each one 
 
 ## 3. Blog / Recount your experience
 
-Congrats, you know exactly what is to become of your project and what your future plans are regarding its scope! Recount your experience to others, tag the host (us Freetail Hackers) on your social media, and let us know how we did or how we could have done better! Or, if you just want to maintain a lower profile, write an article talking about your product and its functionalities. You do not need to publish it, but iwriting it is great way to wrap up the hackathon and see how your hardwork payed off!
+Good work! You know exactly what is to become of your project and what your future plans are regarding its scope! Recount your experience to others, tag the hackathon organizers (we are @freetailhackers) on your social media, and let us know how they did and/or what they could have improved on! Another option is to write an article talking about your product and its functionalities. A lot of employers like seeing posts like these on sites like LinkedIn, since they demonstrate your ability to build functional products with a team in a stressful situation. 
+
+If you want to keep a lower profile, you do not need to publish your article. Just writing it is great way to wrap up the hackathon and see how your hard work paid off!
