@@ -8,7 +8,7 @@ Make a list of everything that went right in this project so that it can be repe
 
 ### The Negatives
 
-Yes, with positives must also come a list of everything that went wrong and should be avoided next time. A suggestion is if something during the project did not go as planned, then make note of it and detail the solutions (if there are any) or what was the root of the problem. 
+Yes, with positives must also come a list of everything that went wrong and should be avoided next time. A suggestion is if something during the project did not go as planned, then make note of it and detail the solutions (if there are any) as well as the root of the problem(s). 
 
 
 In the future if this project is ever referenced or developed again, the post-mortem will save you plenty of time!
