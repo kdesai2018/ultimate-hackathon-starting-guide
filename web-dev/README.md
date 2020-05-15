@@ -1,2 +1,4 @@
 # Web Development
 Web development is a key skill for many software engineers. Have you ever wondered what actually goes into making a site like Google or GitHub? Web developers are the ones responsible for linking the logic of the website (back-end) to how it's presented to users like us (front-end). There are a lot of key components to web development, so for this guide, I'm hoping to introduce you to some key concepts and helpful resources to make your first website.
+
+The biggest distinction in web development is **front-end** vs. **back-end**. Front-end refers to the creation of the actual webpage, as well as the JavaScript that it uses to make calls to the back-end. Back-end is what receives requests from the front-end, and provides data, information, or whatever else it might ask for. The libraries and languages used for each one can be very different, so I've placed separate tutorials for each of them in this folder. Happy web developing!
