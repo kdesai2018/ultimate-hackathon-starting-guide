@@ -17,6 +17,8 @@ Our entire team is currently quarantining at home. With this abundance of free t
 ## I found a mistake // How can I get involved?
 This guide is still in its early stages. If you find a mistake and/or omisison, please fork this repo and create a [pull request](https://help.github.com/en/github/getting-started-with-github/fork-a-repo). Make sure you use [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links) to edit the various README files we have scattered through the repo. Thanks for your help!
 
+## Other useful general tutorials
+Our goal with this project is to help beginners learn as quickly as possible. Part of achieving this goal means sharing as many high quality tutorials as we can. Usually, we will link these tutorials within their respective sections. However, we will link more general, multi-purpose tutorials down below. Hopefully these sources will supplement your learning :smile:
 
-
+1. A team of PhD students at MIT created a course called "The Missing Semester". This is a really good guide into the fundamentals of CS tools, and is well worth a read. However, it is quite long and may not be appropriate if you are just trying to learn a single topic for a hackathon. Check it out [here](https://missing.csail.mit.edu/)
 
