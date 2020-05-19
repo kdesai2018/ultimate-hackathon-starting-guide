@@ -24,7 +24,7 @@ The second thing to decide is whether to design a native or cross-platform app. 
 For most hackathon projects, we recommend taking the cross-platform path with React-Native just because its quicker. If you run into a point where a feature you want is not available, there are ways around this as well. That being said, it’s your choice. You will not be expected to have your app running on a variety of devices, so if you would rather tailor to one platform, that is just as fine.
 
 ## Setting Up
-### Native iOS:
+### Native iOS
 Xcode is the official IDE for developing software for all Apple devices, which includes iOS. It bundles a variety of tools, including Swift and Objective-C compilers, user interface builder, and iOS simulators. It is only available on computers running macOS, and it can be downloaded from the App Store. Swift and Objective-C are the supported languages for development, although Swift is cleaner to write in and now the recommended choice by Apple. If you already have prior experience with Java or Python, Swift might feel similar. Objective-C at one point used to be the only language for development, and as a result, a lot of code bases still use it. Most features at this point should now have Swift counterparts, but there might be rare instances where you will have to mix a bit of Objective-C code in. <br/>
 Here are some tutorials for getting Xcode set up and running your first mobile app. We have also attached the official Swift language guide from Apple for reference.  
 ***Setting Up Tutorials:***<br/>
@@ -33,7 +33,7 @@ https://www.appcoda.com/learnswift/build-your-first-app.html
 ***Swift Language Guide:***<br/>
 https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html
 
-### Native Android:
+### Native Android
 Android Studio is the official IDE for developing software for Android devices. It bundles a variety of tools, including Kotlin and Java compilers, a user interface builder, and Android simulators. It is available for download from the link below. Kotlin and Java are the primary languages for development, with the first now being the preferred choice by Google. Kotlin is cleaner to code, but if you already have experience with Java, we recommend sticking with that. <br/>
 Here are some tutorials for getting Android Studio set up and running your first mobile app. We have also attached the official Kotlin guide for reference.<br/>
 ***Download Android Studio:***<br/>
@@ -43,7 +43,7 @@ https://codelabs.developers.google.com/codelabs/android-training-hello-world/ind
 ***Kotlin Language Guide:***<br/>
 https://kotlinlang.org/docs/reference/
 
-### Cross Platform with React-Native:
+### Cross Platform with React-Native
 React-Native is a cross-platform development framework developed by Facebook that targets both iOS and Android devices. There are two flavors for development: using Expo or the React-Native CLI. 
 Expo is a toolchain built around React-Native, and you can think of it as a wrapper that simplifies your development. It is quicker to set up and test on, and the documentation is friendly enough to serve as the tutorials. The Expo SDK comes with support for many features like a camera, scanner, map view, and much more. One of the biggest benefits of using Expo comes with testing. Expo has phone simulators that run through your browser so you don't need Xcode or Android Studio. In addition, both the iOS App Store and Google Play Store have an Expo Client app that allow you to scan the QR Code of a project you are working on and have it run on your device without needing a physical connection to your computer. The main disadvantages with Expo are the lack of flexibility in adding third-party packages as well as strange problems that might show up much later into the development cycle (usually once the app is published). Even with these disadvantages, **we still recommend using Expo in most cases because of the ease in setting up and testing. If you plan on releasing your app or iterating on it much further beyond the hackathon, then the next approach is probably better.**
 
@@ -73,3 +73,29 @@ https://reactnative.dev/docs/linking-libraries-ios
 
 ## Designing the UI
 Both Android Studio and Xcode support nice visual interface builders that let you drag and drop objects how you would want them to appear on the screen. You also have the ability to modify your layout through code if you prefer. React Native does not come with a visual interface builder, so instead, you design your UI through JavaScript XML (JSX) and CSS code. You can think of JSX as a wrapper language that allows us to write HTML style-code in React. This might be a disadvantage in the sense that you will have to constantly tweak your code to get the perfect UI you want. You can speed things up by setting up **Watchman** with your files. If you have your app already running, everytime you save a code change, the app will automatically be reloaded without you having to manually restart it. 
+
+## ...And that's all the major stuff
+With what we've discussed so far, you should have a working environment set up, have a basic app running, know where to learn language-specifics you might need, be comfortable designing a UI, and know how to add dependencies. We think you're ready to start implementing your own ideas, so feel free to stop here! The remainder of this document discusses some common features that get used in mobile apps, and we include tutorials on how to go about setting them up. 
+
+## Other Features
+### Navigation
+One of the first things you will probably want to design is the flow of your app. This refers to how you can navigate to different screens, and what actions trigger transitions. All three forms of developments have components to simplify your navigation, such as tab bars, sliding drawers, and a variety of transitions effects. There is much to explore, but here are some tutorials with the basics.
+
+### Push Notifications
+Push notifications are the standard way to notify your users of events while your app is running in the background. There are two types of notifications: Local where your app triggers the notification itself; for example, maybe a timer running in the app goes off. Remote notifications on the other hand are written to an outside source and then read by your app. One example of this might be having someone write an inspirational quote to a database each day, having your app check for a write, and then send a push notification to your user. Local notification types must be hardcoded into the app by the time it is running. But with remote notifications, your app only needs to know how to read and display a message, making this much more flexible. 
+For setting up remote notifications, we recommend using Google Firebase’s Cloud Messaging Service (CMS). It allows you to register apps to be notified of any messages you publish through the CMS console. You can also customize settings like the time a message should be delivered. 
+One particular hassle with push notifications is that they can only be tested on physical devices, not simulators. And for iOS devices, in order to get either type of push notifications working, you will need to set up a developer’s account which costs upwards of $100. If push notifications are an essential part of your app, we strongly suggest testing on Android devices. 
+Here are some tutorials to help get you started.
+
+### Maps
+If your app needs to show a user’s current location or find a route to a destination, you might consider embedding a map view. There is a great amount of documentation available here, and Google even has an SDK that allows you to incorporate Google Maps on iOS devices if you prefer. There are ways to “fake” your location when testing in a simulator, but again, we recommend testing on a physical device.
+Accessing the Camera and Photos
+If uploading and downloading content to and from your app is important, then you might need to access a user’s camera and photo library. This is a feature that requires explicit permission from your users, so if you’re designing a fully-fledged app, make sure to have a backup route through your app in case permission isn’t granted. 
+
+
+### Making HTTP Requests
+Your app might need to make API requests at some point. Or maybe your app is a client that talks to a server that you’ve set up. In either case, you’ll need to make use of HTTP requests for communication. We strongly recommend making asynchronous requests (as opposed to synchronous) so that new content is fetched in the background while the rest of your app continues to run. 
+
+### Local/Offline Database
+In some cases, your app might need to store local data that pertains only to the user of your app. You can use a local database for this, and there a variety of options listed below.  If you only need to store a few properties, manipulating a list of user preferences is a much lighter option than creating a fully-fledged database.
+Keep in mind that if you want your user’s data to be easily accessible by other users or by other applications, using an online database is a much better solution. Check out our database section on options for getting this set up. 
