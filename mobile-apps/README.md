@@ -1,11 +1,11 @@
 # Mobile Development (iOS, Android, Cross-Platform)
 ## First things first...should you make a mobile app or stick with a website?
-A mobile platform is a great space to develop your ideas for, but it’s usually not the place to start. Creating a website is commonly the first step for getting an idea up and running because its much simpler, for a variety of reasons.
-1. You may need minimal setup to start developing a website. Especially if you’re creating a static site with only a frontend, the languages you’ll probably be using (HTML, CSS, JavaScript) are already understood by whichever browser you’re using, and any other tools you might need are quick to setup. Mobile development on the other hand might involve downloading a whole new IDE.
-2. Testing is faster for a website. It’s as simple as refreshing the page in your browser. Testing on mobile simulators and physical devices can take a while to start up, and because you may end up having to restart your app each time you make a code change, this can feel slow after a while.
-3. Some parts of mobile development are difficult to get around without the right resources; for example, if you want to make an iOS app, you will need a computer running macOS. Web development tools you might need generally run on all major platforms, thus making collaboration easier as well.
+A mobile platform is a great space to develop your ideas for, but it’s usually not easiest the place to start. Creating a website is usually much simpler for getting an idea up and running, for a variety of reasons.
+1. You may need minimal setup to start developing a website. Especially if you’re creating a static site with only a frontend, the languages you’ll probably be using (HTML, CSS, JavaScript) are already understood by whichever browser you’re using, and any other tools you might need are quick to setup. Mobile development on the other hand might involve the lengthy process of downloading a whole new IDE.
+2. Testing is faster for a website. It’s as simple as refreshing the page in your browser. Testing on mobile simulators and physical devices can take a while to start up, and if you choose a native approach, you may end up having to restart your app each time you make a code change.
+3. Some parts of mobile development are difficult to get around without the right resources; for example, if you want to make an iOS app, you will need a computer running macOS. Web development tools generally run on all major platforms, thus making collaboration easier as well.
 
-That being said though, there are several times where you might be designing a product that is intended for a mobile device. Here are a few reasons why you should create a mobile app. 
+That being said though, there are several times where you might be designing a product that is intended for a mobile device. Here are a few reasons when it's better to create a mobile app. 
 1. If it’s important to notify your users of events even when they are not actively using your product. Mobile apps can send push notifications to display information in real time. Websites can do this too, but for users on the go, it’s more likely they’ll be able to check their phones instead of their laptops.
 2. If all your content does not require an internet connection. Mobile apps are able to retrieve new content when an internet connection is present, but they may still be able to show some other content without it. On the other hand, you’ll always need to be online to access any part of a website. 
 3. If user and world interaction is important. Sharing information with contacts or taking and uploading photos to a social media account are usually much quicker to do on a phone than on a computer.
@@ -54,3 +54,22 @@ https://docs.expo.io<br/>
 https://docs.expo.io/versions/latest/<br/>
 ***React-Native CLI Setup (make sure to use the React Native CLI Quickstart)***<br/>
 https://reactnative.dev/docs/environment-setup
+
+## Adding Dependencies
+There might be some point in your project where you need to add a third-party library or package. Most of these packages will be already registered with a **dependency manager** that is configured as part of the during the setting up stage. All you have to do is specify a list of the package names and versions that you want, and the dependency manager takes care of finding and installing them. 
+1. Native iOS: CocoaPods is the dependency manager provided by Xcode, and you specify the packages you need in a Podfile. You can browse through the many registered packages, called Pods, to find what you might need.
+2. Native Android: Gradle handles dependency management in Android Studio (among many other things), and you specify the packages you need in a build.gradle file.
+3. React Native: The two most popular dependency manager tools are Node Package Manager (npm) and Yarn. You specify the packages you need in a package.json file. You can browse through the packages in the npm registry (linked below) to find what you need.
+***CocoaPods Pod Registry***<br/>
+https://cocoapods.org<br/>
+***Npm Package Registry***</br>
+https://npmjs.com<br/>
+***How to Add Pods to a Podfile***</br>
+https://guides.cocoapods.org/using/using-cocoapods.html<br/>
+***How to Add Android Dependencies***</br>
+https://developer.android.com/studio/build/dependencies
+***Adding Packages to React Native Project***</br>
+https://reactnative.dev/docs/linking-libraries-ios
+
+## Designing the UI
+Both Android Studio and Xcode support nice visual interface builders that let you drag and drop objects how you would want them to appear on the screen. You also have the ability to modify your layout through code if you prefer. React Native does not come with a visual interface builder, so instead, you design your UI through JavaScript XML (JSX) and CSS code. You can think of JSX as a wrapper language that allows us to write HTML style-code in React. This might be a disadvantage in the sense that you will have to constantly tweak your code to get the perfect UI you want. You can speed things up by setting up **Watchman** with your files. If you have your app already running, everytime you save a code change, the app will automatically be reloaded without you having to manually restart it. 
