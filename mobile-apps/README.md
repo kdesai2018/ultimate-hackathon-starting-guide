@@ -103,6 +103,7 @@ https://docs.expo.io
 The remainder of this document discusses some common features that get used in mobile apps, and we include tutorials on how to go about setting them up. All React Native resources should generally be assumed to be for the React Native CLI since the Expo documentation already does a great job with examples. 
 ### Navigation
 One of the first things you will probably want to design is the flow of your app. This refers to how you can navigate to different screens, and what actions trigger transitions. All three forms of developments have components to simplify your navigation, such as tab bars, sliding drawers, navigation bars, and a variety of transitions effects. There is much to explore, but here are some tutorials to get started.
+
 ***Creating Tab Bar Application in Native iOS***<br/>
 https://codewithchris.com/ios-tab-bar-app/<br/>
 ***Create Navigation Drawer for Android App***<br/>
