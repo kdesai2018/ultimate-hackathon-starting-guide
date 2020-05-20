@@ -117,34 +117,73 @@ One particular hassle with remote notifications is that they can only be tested 
 Here are some tutorials to help get you started.
 
 ***Native iOS Notifications***<br/>
-*Local: *https://www.hackingwithswift.com/books/ios-swiftui/scheduling-local-notifications<br/>
-*Remote: *https://www.iosapptemplates.com/blog/ios-development/push-notifications-firebase-swift-5
+*Local:* https://www.hackingwithswift.com/books/ios-swiftui/scheduling-local-notifications<br/>
+*Remote:* https://www.iosapptemplates.com/blog/ios-development/push-notifications-firebase-swift-5<br/>
 ***Native Android Notifications***<br/>
-*Local: *https://developer.android.com/training/notify-user/build-notification<br/>
-*Remote: *https://www.androidauthority.com/android-push-notifications-with-firebase-cloud-messaging-925075/<br/>
+*Local:* https://developer.android.com/training/notify-user/build-notification<br/>
+*Remote:* https://www.androidauthority.com/android-push-notifications-with-firebase-cloud-messaging-925075/<br/>
 ***React Native Local Notifications***<br/>
-*Local: *https://dev.to/edmondso006/react-native-local-ios-and-android-notifications-2c58<br/>
-*Remote: *https://www.codementor.io/@uokesita/react-native-push-notifications-with-firebase-2019-10on0z19t6
+*Local:* https://dev.to/edmondso006/react-native-local-ios-and-android-notifications-2c58<br/>
+*Remote:* https://www.codementor.io/@uokesita/react-native-push-notifications-with-firebase-2019-10on0z19t6
 
 ### Maps
 If your app needs to show a user’s current location or find a route to a destination, you might consider embedding a map view. There is a great amount of documentation available here, and Google even has an SDK that allows you to incorporate Google Maps on iOS devices if you prefer. There are ways to “fake” your location when testing in a simulator, but again, we recommend testing on a physical device.
-***Native iOS MapKit***</br>
-https://www.raywenderlich.com/7738344-mapkit-tutorial-getting-started</br>
-***Google Maps Tutorial for Native iOS***</br>
-https://www.raywenderlich.com/7363101-google-maps-ios-sdk-tutorial-getting-started
-***Native Android Maps SDK (scroll to tutorials section)***</br>
-https://developers.google.com/maps/documentation/android-sdk/intro</br>
-***Maps in React Native***</br>
-https://www.freecodecamp.org/news/how-to-integrate-maps-in-react-native-using-react-native-maps-5745490fe055/</br>
+
+***Native iOS MapKit***<br/>
+https://www.raywenderlich.com/7738344-mapkit-tutorial-getting-started<br/>
+***Google Maps Tutorial for Native iOS***<br/>
+https://www.raywenderlich.com/7363101-google-maps-ios-sdk-tutorial-getting-started<br/>
+***Native Android Maps SDK (scroll to tutorials section)***<br/>
+https://developers.google.com/maps/documentation/android-sdk/intro<br/>
+***Maps in React Native***<br/>
+https://www.freecodecamp.org/news/how-to-integrate-maps-in-react-native-using-react-native-maps-5745490fe055/<br/>
 
 
 ### Accessing the Camera and Photos
 If uploading and downloading content to and from your app is important, then you might need to access a user’s camera and photo library. This is a feature that requires explicit permission from your users, so if you’re designing a fully-fledged app, make sure to have a backup route through your app in case permission isn’t granted. 
 
+***Native iOS Tutorial***<br/>
+https://www.zerotoappstore.com/how-to-access-camera-photo-library-in-swift.html<br/>
+***Make a Camera App in Swift (official Resource)***<br/>
+https://developer.apple.com/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app<br/>
+***Native Android Tutorial***<br/>
+https://www.c-sharpcorner.com/UploadFile/e14021/capture-image-from-camera-and-selecting-image-from-gallery-o/<br/>
+***React Native Tutorial***<br/>
+https://www.positronx.io/react-native-pick-images-from-camera-gallery-example/<br/>
 
 ### Making HTTP Requests
 Your app might need to make API requests at some point. Or maybe your app is a client that talks to a server that you’ve set up. In either case, you’ll need to make use of HTTP requests for communication. We strongly recommend making asynchronous requests (as opposed to synchronous) so that new content is fetched in the background while the rest of your app continues to run. 
 
-### Local/Offline Database
-In some cases, your app might need to store local data that pertains only to the user of your app. You can use a local database for this, and there a variety of options listed below.  If you only need to store a few properties, manipulating a list of user preferences is a much lighter option than creating a fully-fledged database.
+***Native iOS Tutorial***<br/>
+https://learnappmaking.com/urlsession-swift-networking-how-to/<br/>
+***Native Android Tutorial***<br/>
+https://developer.android.com/training/volley<br/>
+***React Native Request Examples***<br/>
+https://reactnative.dev/docs/network<br/>
+
+### Storing Data Locally
+In some cases, your app might need to store local data that pertains only to the user of your app. You can use a local database for this, and there a variety of options listed below.  If you only need to store a few properties as key-value pairs, manipulating a list of user preferences is a much lighter option than creating a fully-fledged database.<br/>
 Keep in mind that if you want your user’s data to be easily accessible by other users or by other applications, using an online database is a much better solution. Check out our database section on options for getting this set up. 
+#### Database Options
+These are just a few of the many database options available to use.<br/>
+***Native iOS Core Data Documentation: Core Data is Apple's official local database solution***<br/>
+https://developer.apple.com/documentation/coredata<br/>
+***Native iOS Core Data Tutorial***<br/>
+http://www.brianadvent.com/build-simple-core-data-driven-ios-app/<br/>
+***Native iOS RealmSwift Documentation (a more beginner-friendly alternative to Core Data)***<br/>
+https://realm.io/docs/swift/latest/<br/>
+***Native iOS RealmSwift Tutorial***<br/>
+https://learnappmaking.com/realm-database-swift-getting-started/#getting-data-from-realm-database
+***Native Android Tutorial***<br/>
+https://developer.android.com/training/data-storage/room<br/>
+***React Native Tutorial Realm Documentation***<br/>
+https://realm.io/docs/javascript/latest/<br/>
+***React Native Realm Tutorial***<br/>
+https://aboutreact.com/example-of-realm-database-in-react-native/#Code-for-Realm-Database<br/>
+#### User Preference Options
+***Native iOS UserDefaults Tutorial***<br/>
+https://medium.com/better-programming/userdefaults-in-swift-4-d1a278a0ec79<br/>
+***Native Android Preferences Tutorial***<br/>
+https://developer.android.com/training/data-storage/shared-preferences<br/>
+***React Native AsyncStorage Tutorial (scroll to README)***<br/>
+https://github.com/react-native-community/async-storage
