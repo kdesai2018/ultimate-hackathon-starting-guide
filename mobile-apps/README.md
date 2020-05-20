@@ -183,7 +183,7 @@ https://realm.io/docs/javascript/latest/<br/>
 ***React Native Realm Tutorial***<br/>
 https://aboutreact.com/example-of-realm-database-in-react-native/#Code-for-Realm-Database<br/>
 
-**User Preference Options**<br/>
+#### User Preference Options
 ***Native iOS UserDefaults Tutorial***<br/>
 https://medium.com/better-programming/userdefaults-in-swift-4-d1a278a0ec79<br/>
 ***Native Android Preferences Tutorial***<br/>
