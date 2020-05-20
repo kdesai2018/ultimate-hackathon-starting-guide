@@ -26,7 +26,8 @@ For most hackathon projects, we recommend taking the cross-platform path with Re
 ## Setting Up
 ### Native iOS
 Xcode is the official IDE for developing software for all Apple devices, which includes iOS. It bundles a variety of tools, including Swift and Objective-C compilers, user interface builder, and iOS simulators. It is only available on computers running macOS, and it can be downloaded from the App Store. Swift and Objective-C are the supported languages for development, although Swift is cleaner to write in and now the recommended choice by Apple. If you already have prior experience with Java or Python, Swift might feel similar. Objective-C at one point used to be the only language for development, and as a result, a lot of code bases still use it. Most features at this point should now have Swift counterparts, but there might be rare instances where you will have to mix a bit of Objective-C code in. <br/>
-Here are some tutorials for getting Xcode set up and running your first mobile app. We have also attached the official Swift language guide from Apple for reference.  
+Here are some tutorials for getting Xcode set up and running your first mobile app. We have also attached the official Swift language guide from Apple for reference.
+
 ***Setting Up Tutorials:***<br/>
 https://codewithchris.com/xcode-tutorial/#10-ios-simulator   
 https://www.appcoda.com/learnswift/build-your-first-app.html  
@@ -35,7 +36,8 @@ https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html
 
 ### Native Android
 Android Studio is the official IDE for developing software for Android devices. It bundles a variety of tools, including Kotlin and Java compilers, a user interface builder, and Android simulators. It is available for download from the link below. Kotlin and Java are the primary languages for development, with the first now being the preferred choice by Google. Kotlin is cleaner to code, but if you already have experience with Java, we recommend sticking with that. <br/>
-Here are some tutorials for getting Android Studio set up and running your first mobile app. We have also attached the official Kotlin guide for reference.<br/>
+Here are some tutorials for getting Android Studio set up and running your first mobile app. We have also attached the official Kotlin guide for reference.
+
 ***Download Android Studio:***<br/>
 https://developer.android.com/studio <br/>
 ***Setting Up Tutorials:***<br/>
@@ -48,6 +50,7 @@ React-Native is a cross-platform development framework developed by Facebook tha
 Expo is a toolchain built around React-Native, and you can think of it as a wrapper that simplifies your development. It is quicker to set up and test on, and it comes with support for many features like a camera, scanner, map view, and much more. Another big benefit comes with testing. Expo already has phone simulators running that you can use through your browser so you don't need Xcode or Android Studio. In addition, both the iOS App Store and Google Play Store have an Expo Client app that allow you to scan the QR Code of a project you are working on and have it run on your device without needing a physical connection to your computer. The main disadvantages with Expo are the lack of flexibility in adding third-party packages as well as strange problems that might show up if you decide to publish your app. **For most cases, we recommend using Expo because of the ease in setting up and testing. If you plan on releasing your app or iterating on it much further beyond the hackathon, then the next approach is probably better.** <br/>
 The React-Native command line interface allows you to develop vanilla React-Native apps without the wrappers like Expo on top. Using React-Native is ultimately the best long-term approach as you can integrate most third-party packages with it. However, a lot of the abstractions that Expo would otherwise take care of no longer exist. Packages designed for Expo will not work for vanilla React-Native. And to test on a physical device, you will need a connection with your computer to transfer the app over. Probably most inconvenient, you will need to download Android Studio and Xcode as well so that you can have access to the phone simulators as well as the software responsible for transfering the app to your device. <br/>
 Both approaches use React Js, JSX, and CSS as languages for development. React JS is a JavaScript library developed by Facebook that is designed for "building user interfaces". And you can think of JSX as a wrapper language that allows you to write HTML-style code in React. We have included a tutorial below that walks through the basics of React.
+
 ***Expo Documentation (how to set up)***<br/>
 https://docs.expo.io<br/>
 ***Expo SDK (all the features and how to set them up...amazingly clean to read)***<br/>
@@ -62,6 +65,7 @@ There might be some point in your project where you need to add a third-party li
 1. Native iOS: CocoaPods is the dependency manager provided by Xcode, and you specify the packages you need in a Podfile. You can browse through the many registered packages, called Pods, to find what you might need.
 2. Native Android: Gradle handles dependency management in Android Studio (among many other things), and you specify the packages you need in a build.gradle file.
 3. React Native: The two most popular dependency manager tools are Node Package Manager (npm) and Yarn. You specify the packages you need in a package.json file. You can browse through the packages in the npm registry (linked below) to find what you need.
+
 ***CocoaPods Pod Registry***<br/>
 https://cocoapods.org<br/>
 ***Npm Package Registry***</br>
@@ -69,17 +73,34 @@ https://npmjs.com<br/>
 ***How to Add Pods to a Podfile***</br>
 https://guides.cocoapods.org/using/using-cocoapods.html<br/>
 ***How to Add Android Dependencies***</br>
-https://developer.android.com/studio/build/dependencies
+https://developer.android.com/studio/build/dependencies<br/>
 ***Adding Packages to React Native Project***</br>
 https://reactnative.dev/docs/linking-libraries-ios
 
 ## Designing the UI
-Both Android Studio and Xcode support nice visual interface builders that let you drag and drop objects how you would want them to appear on the screen. You also have the ability to modify your layout through code if you prefer. React Native does not come with a visual interface builder, so instead, you design your UI through JavaScript XML (JSX) and CSS code. You can think of JSX as a wrapper language that allows us to write HTML style-code in React. This might be a disadvantage in the sense that you will have to constantly tweak your code to get the perfect UI you want. You can speed things up by setting up **Watchman** with your files. If you have your app already running, everytime you save a code change, the app will automatically be reloaded without you having to manually restart it. 
+Both Android Studio and Xcode support nice visual interface builders that let you drag and drop objects how you would want them to appear on the screen. You also have the ability to modify your layout through code if you prefer. React Native does not come with a visual interface builder, so instead, you design your UI through JavaScript XML (JSX) and CSS code. You can think of JSX as a wrapper language that allows us to write HTML style-code in React. This might be a disadvantage in the sense that you will have to constantly tweak your code to get the perfect UI you want. You can speed things up by setting up **Watchman** with your files. If you have your app already running, everytime you save a code change, the app will automatically be reloaded without you having to manually restart it.<br/>
+
+***Native iOS UI Example App (very good official resource, although Swift syntax slightly outdated)***<br/>
+https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift/<br/>
+***Native Android UI Example App (official resource)***</br>
+https://developer.android.com/training/basics/firstapp/creating-project<br/>
+***React-Native UI Example App***</br>
+https://www.raywenderlich.com/485-react-native-tutorial-building-ios-apps-with-javascript<br/>
 
 ## ...And that's all the major stuff
-With what we've discussed so far, you should have a working environment set up, have a basic app running, know where to learn language-specifics you might need, be comfortable designing a UI, and know how to add dependencies. We think you're ready to start implementing your own ideas, so feel free to stop here! The remainder of this document discusses some common features that get used in mobile apps, and we include tutorials on how to go about setting them up. 
+With what we've discussed so far, you should have a working environment set up, have a basic app running, know where to learn language-specifics you might need, be comfortable designing a UI, and know how to add dependencies. We think you're ready to start implementing your own ideas, so feel free to stop here! Remember that for all the unanswered questions you have, StackOverflow is your friend. And to explore all the things that you can do, check out the official documentation!
+
+***Native iOS Official Documentation***<br/>
+https://developer.apple.com/documentation/<br/>
+***Native Android Official Documentation***<br/>
+https://developer.android.com/guide<br/>
+***React Native Official Documentation***<br/>
+https://reactnative.dev/docs/getting-started<br/>
+***Expo Documentation (Same as earlier)***<br/>
+https://docs.expo.io
 
 ## Other Features
+The remainder of this document discusses some common features that get used in mobile apps, and we include tutorials on how to go about setting them up. 
 ### Navigation
 One of the first things you will probably want to design is the flow of your app. This refers to how you can navigate to different screens, and what actions trigger transitions. All three forms of developments have components to simplify your navigation, such as tab bars, sliding drawers, and a variety of transitions effects. There is much to explore, but here are some tutorials with the basics.
 
