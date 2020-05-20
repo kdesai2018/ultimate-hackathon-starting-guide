@@ -104,7 +104,7 @@ The remainder of this document discusses some common features that get used in m
 ### Navigation
 One of the first things you will probably want to design is the flow of your app. This refers to how you can navigate to different screens, and what actions trigger transitions. All three forms of developments have components to simplify your navigation, such as tab bars, sliding drawers, navigation bars, and a variety of transitions effects. There is much to explore, but here are some tutorials to get started.
 ***Creating Tab Bar Application in Native iOS***<br/>
-https://codewithchris.com/ios-tab-bar-app/
+https://codewithchris.com/ios-tab-bar-app/<br/>
 ***Create Navigation Drawer for Android App***<br/>
 https://code.tutsplus.com/tutorials/how-to-code-a-navigation-drawer-in-an-android-app--cms-30263
 ***React Native Navigation Tutorial***<br/>
