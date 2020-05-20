@@ -174,7 +174,7 @@ https://developer.apple.com/documentation/coredata<br/>
 http://www.brianadvent.com/build-simple-core-data-driven-ios-app/<br/>
 ***Native iOS RealmSwift Documentation (a more beginner-friendly alternative to Core Data)***<br/>
 https://realm.io/docs/swift/latest/<br/>
-***Native iOS RealmSwift Tutorial***<br/>
+***Native iOS Realm Swift Tutorial***<br/>
 https://learnappmaking.com/realm-database-swift-getting-started/#getting-data-from-realm-database
 ***Native Android Tutorial***<br/>
 https://developer.android.com/training/data-storage/room<br/>
