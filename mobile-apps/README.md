@@ -145,7 +145,7 @@ If uploading and downloading content to and from your app is important, then you
 
 ***Native iOS Tutorial***<br/>
 https://www.zerotoappstore.com/how-to-access-camera-photo-library-in-swift.html<br/>
-***Make a Camera App in Swift (official Resource)***<br/>
+***Make a Camera App in Swift (official resource)***<br/>
 https://developer.apple.com/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app<br/>
 ***Native Android Tutorial***<br/>
 https://www.c-sharpcorner.com/UploadFile/e14021/capture-image-from-camera-and-selecting-image-from-gallery-o/<br/>
