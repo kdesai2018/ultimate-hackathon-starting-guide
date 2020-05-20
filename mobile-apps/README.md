@@ -172,7 +172,7 @@ These are just a few of the many database options available to use.<br/>
 https://developer.apple.com/documentation/coredata<br/>
 ***Native iOS Core Data Tutorial***<br/>
 http://www.brianadvent.com/build-simple-core-data-driven-ios-app/<br/>
-***Native iOS RealmSwift Documentation (a more beginner-friendly alternative to Core Data)***<br/>
+***Native iOS Realm Swift Documentation (a more beginner-friendly alternative to Core Data)***<br/>
 https://realm.io/docs/swift/latest/<br/>
 ***Native iOS Realm Swift Tutorial***<br/>
 https://learnappmaking.com/realm-database-swift-getting-started/#getting-data-from-realm-database
