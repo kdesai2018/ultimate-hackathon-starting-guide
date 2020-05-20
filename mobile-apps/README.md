@@ -166,7 +166,7 @@ https://reactnative.dev/docs/network<br/>
 In some cases, your app might need to store local data that pertains only to the user of your app. You can use a local database for this, and there a variety of options listed below.  If you only need to store a few properties as key-value pairs, manipulating a list of user preferences is a much lighter option than creating a fully-fledged database.<br/>
 Keep in mind that if you want your user’s data to be easily accessible by other users or by other applications, using an online database is a much better solution. Check out our database section on options for getting this set up. 
 
-**Database Options**<br/>
+#### Database Options 
 These are just a few of the many database options available to use.<br/>
 ***Native iOS Core Data Documentation: Core Data is Apple's official local database solution***<br/>
 https://developer.apple.com/documentation/coredata<br/>
