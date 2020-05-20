@@ -106,7 +106,7 @@ One of the first things you will probably want to design is the flow of your app
 ***Creating Tab Bar Application in Native iOS***<br/>
 https://codewithchris.com/ios-tab-bar-app/<br/>
 ***Create Navigation Drawer for Android App***<br/>
-https://code.tutsplus.com/tutorials/how-to-code-a-navigation-drawer-in-an-android-app--cms-30263
+https://code.tutsplus.com/tutorials/how-to-code-a-navigation-drawer-in-an-android-app--cms-30263<br/>
 ***React Native Navigation Tutorial***<br/>
 https://wix.github.io/react-native-navigation/docs/before-you-start
 
