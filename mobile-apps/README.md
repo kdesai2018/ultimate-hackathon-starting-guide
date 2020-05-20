@@ -6,7 +6,7 @@ A mobile platform is a great space to develop your ideas for, but it’s usually
 3. Some parts of mobile development are difficult to get around without the right resources; for example, if you want to make an iOS app, you will need a computer running macOS. Web development tools generally run on all major platforms, thus making collaboration easier as well.
 
 That being said though, there are several times where you might be designing a product that is intended for a mobile device. Here are a few reasons when it's better to create a mobile app. 
-1. If it’s important to notify your users of events even when they are not actively using your product. Mobile apps can send push notifications to display information in real time. Websites can do this too, but for users on the go, it’s more likely they’ll be able to check their phones instead of their laptops.
+1. If it’s important to notify your users of events even when they are not actively using your product. Mobile apps can send notifications to display information in real time. Websites can do this too, but for users on the go, it’s more likely they’ll be able to check their phones instead of their laptops.
 2. If all your content does not require an internet connection. Mobile apps are able to retrieve new content when an internet connection is present, but they may still be able to show some other content without it. On the other hand, you’ll always need to be online to access any part of a website. 
 3. If user and world interaction is important. Sharing information with contacts or taking and uploading photos to a social media account are usually much quicker to do on a phone than on a computer.
 4. If you need to access specific features. You may need to access the camera, photo library, flashlight, current location, accelerometer, microphone, or something else. There are a great selection of mobile development APIs for working with specific devices on your phone.
@@ -100,19 +100,45 @@ https://reactnative.dev/docs/getting-started<br/>
 https://docs.expo.io
 
 ## Other Features
-The remainder of this document discusses some common features that get used in mobile apps, and we include tutorials on how to go about setting them up. 
+The remainder of this document discusses some common features that get used in mobile apps, and we include tutorials on how to go about setting them up. All React Native resources should generally be assumed to be for the React Native CLI since the Expo documentation already does a great job with examples. 
 ### Navigation
-One of the first things you will probably want to design is the flow of your app. This refers to how you can navigate to different screens, and what actions trigger transitions. All three forms of developments have components to simplify your navigation, such as tab bars, sliding drawers, and a variety of transitions effects. There is much to explore, but here are some tutorials with the basics.
+One of the first things you will probably want to design is the flow of your app. This refers to how you can navigate to different screens, and what actions trigger transitions. All three forms of developments have components to simplify your navigation, such as tab bars, sliding drawers, navigation bars, and a variety of transitions effects. There is much to explore, but here are some tutorials to get started.
+***Creating Tab Bar Application in Native iOS***<br/>
+https://codewithchris.com/ios-tab-bar-app/
+***Create Navigation Drawer for Android App***<br/>
+https://code.tutsplus.com/tutorials/how-to-code-a-navigation-drawer-in-an-android-app--cms-30263
+***React Native Navigation Tutorial***<br/>
+https://wix.github.io/react-native-navigation/docs/before-you-start
 
-### Push Notifications
-Push notifications are the standard way to notify your users of events while your app is running in the background. There are two types of notifications: Local where your app triggers the notification itself; for example, maybe a timer running in the app goes off. Remote notifications on the other hand are written to an outside source and then read by your app. One example of this might be having someone write an inspirational quote to a database each day, having your app check for a write, and then send a push notification to your user. Local notification types must be hardcoded into the app by the time it is running. But with remote notifications, your app only needs to know how to read and display a message, making this much more flexible. 
-For setting up remote notifications, we recommend using Google Firebase’s Cloud Messaging Service (CMS). It allows you to register apps to be notified of any messages you publish through the CMS console. You can also customize settings like the time a message should be delivered. 
-One particular hassle with push notifications is that they can only be tested on physical devices, not simulators. And for iOS devices, in order to get either type of push notifications working, you will need to set up a developer’s account which costs upwards of $100. If push notifications are an essential part of your app, we strongly suggest testing on Android devices. 
+### Notifications
+Notifications are the standard way to inform your users of events while your app is running in the background. There are two types of notifications: ***Local*** where your app triggers the notification itself; for example, maybe a timer running in the app goes off. ***Remote*** notifications, commonly called push notifications, on the other hand are written to an outside source and then read by your app. One example of this might be having someone write an inspirational quote to a database each day, having your app check for a write, and then send a push notification to your user. Local notification types must be hardcoded into the app by the time it is running. But with remote notifications, your app only needs to know how to read and display a message, making this much more flexible. 
+For setting up remote notifications, we recommend using Google Firebase’s Cloud Messaging Service (FCM). It allows you to register apps to be notified of any messages you publish through the FCM console. You can also customize settings like the time a message should be delivered. 
+One particular hassle with remote notifications is that they can only be tested on physical devices, not simulators. And for iOS devices, the Apple Push Notifications Service (APNS) acts as a middle-man which intercepts sent messages and delivers them to the appropriate app. In order to communicate with the APNS, you will need to set up a developer’s account which costs upwards of $100. If push notifications are an essential part of your app, we strongly suggest using Android development. 
 Here are some tutorials to help get you started.
+
+***Native iOS Notifications***<br/>
+*Local: *https://www.hackingwithswift.com/books/ios-swiftui/scheduling-local-notifications<br/>
+*Remote: *https://www.iosapptemplates.com/blog/ios-development/push-notifications-firebase-swift-5
+***Native Android Notifications***<br/>
+*Local: *https://developer.android.com/training/notify-user/build-notification<br/>
+*Remote: *https://www.androidauthority.com/android-push-notifications-with-firebase-cloud-messaging-925075/<br/>
+***React Native Local Notifications***<br/>
+*Local: *https://dev.to/edmondso006/react-native-local-ios-and-android-notifications-2c58<br/>
+*Remote: *https://www.codementor.io/@uokesita/react-native-push-notifications-with-firebase-2019-10on0z19t6
 
 ### Maps
 If your app needs to show a user’s current location or find a route to a destination, you might consider embedding a map view. There is a great amount of documentation available here, and Google even has an SDK that allows you to incorporate Google Maps on iOS devices if you prefer. There are ways to “fake” your location when testing in a simulator, but again, we recommend testing on a physical device.
-Accessing the Camera and Photos
+***Native iOS MapKit***</br>
+https://www.raywenderlich.com/7738344-mapkit-tutorial-getting-started</br>
+***Google Maps Tutorial for Native iOS***</br>
+https://www.raywenderlich.com/7363101-google-maps-ios-sdk-tutorial-getting-started
+***Native Android Maps SDK (scroll to tutorials section)***</br>
+https://developers.google.com/maps/documentation/android-sdk/intro</br>
+***Maps in React Native***</br>
+https://www.freecodecamp.org/news/how-to-integrate-maps-in-react-native-using-react-native-maps-5745490fe055/</br>
+
+
+### Accessing the Camera and Photos
 If uploading and downloading content to and from your app is important, then you might need to access a user’s camera and photo library. This is a feature that requires explicit permission from your users, so if you’re designing a fully-fledged app, make sure to have a backup route through your app in case permission isn’t granted. 
 
 
