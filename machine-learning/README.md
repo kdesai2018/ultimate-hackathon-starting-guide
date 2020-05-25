@@ -80,8 +80,7 @@ Machine Learning is a really useful tool for many hackathon projects if used eff
 
 These sites are just a starting point - there is no substitute for getting your hands messy quickly. Fire up a venv or conda env (see note below) and get started! 
 
-### What is venv and/or conda env
-Good question. We'll definitely try to include a more thorough explanation somewhere else in this repo, but heres the gist of it. 
+### Where should I code this?
 
 When you're working on a large python project, you often have multiple dependencies (modules that your code needs to run). These dependencies may conflict with other programs on your computer, forcing you to spend time debugging. Venv (python's virtual environment library) and anaconda (data science python based platform) environments help take the stress out of handling your dependencies. A virtual environment has its own version of python, pip (pythons default package manager) and all modules that you installed. This ensures that your versions don't conflict with each other. In an ideal world, if all your team members have an identical virtual environment set up, then there should be no differences between running the code. 
 
@@ -97,4 +96,3 @@ You can use either conda environments, or virtual environments. Conda is more st
 [conda](https://stackoverflow.com/questions/45421163/anaconda-vs-miniconda), but I'd recommend insalling the full anaconda package to make your life easier. 
 
 [setting up conda env](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/)
-
