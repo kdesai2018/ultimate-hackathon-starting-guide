@@ -42,7 +42,7 @@ Keras, PyTorch, and Tensorflow have a whole bunch of documentation out there for
 
 You will most likely have to look into these frameworks to decide which one is the right fit for your project, but here are some general differences as a starting point:
 
-Keras (Recommended for beginners and small datasets):
+[Keras](https://keras.io/) (Recommended for beginners and small datasets):
   - High level API (Abstracts things more)
   - Slower runtimes(Shouldn't matter too much in this context)
   - Simplest to use
@@ -50,7 +50,8 @@ Keras (Recommended for beginners and small datasets):
   - Less accurate models
   - Simple models with minial debugging  
   
-Tensorflow (Recommended for experienced users who need high performance models despite smaller datasets):
+
+[Tensorflow](https://www.tensorflow.org/) (Recommended for experienced users who need high performance models despite smaller datasets):
   - High and Low level API's
   - Faster runtimes
   - Harder to use
@@ -58,7 +59,7 @@ Tensorflow (Recommended for experienced users who need high performance models d
   - Accurate models
   - Hard to debug  
   
- PyTorch (Recommended for machine learning gods who need high performance models and have large datasets):
+ [PyTorch](https://pytorch.org/) (Recommended for machine learning gods who need high performance models and have large datasets):
   - Low Level API
   - Faster runtimes
   - Hardest to use
@@ -69,7 +70,7 @@ Tensorflow (Recommended for experienced users who need high performance models d
 
 ## Pros and Cons
 While ML is indeed very flashy, it also has some not-so-flashy aspects, which I will cover so you can consider if incorporating ML into your project is a good fit
-  
+
 Pros:
   - Very relevant in the field of software development
   - Very flashy
