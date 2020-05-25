@@ -20,7 +20,7 @@ Here are some cool ML hackathon projects as inspiration to get started!
 
 3. [ColorMe](https://devpost.com/software/colorme-50fz68) - A unique project which uses Image Analysis to predict what color palettes for clothing would look best on the user.
 
-4. [StickyAR](https://devpost.com/software/stickyar) - Fun game built at HackMIT that takes a more light-hearted approach to ML. These hackers used OpenCV to detect sticky notes in a frame, and let the end user play a game using those sticky notes!
+4. [GazePay](https://devpost.com/software/gazepay) - A project from nwHacks 2018 that uses neural networks for facial recognition to make paying easier.
 
 There are a lot more! Browse [devpost](https://devpost.com) to see more cool projects. 
 
@@ -39,7 +39,7 @@ Keras (Recommended for beginners and small datasets):
   - Less accurate models
   - Simple models with minial debugging  
   
-Tensorflow (Recommended for experienced users and high performance reduced size models):
+Tensorflow (Recommended for experienced users and high performance models despite smaller datasets):
   - High and Low level API's
   - Faster runtimes
   - Harder to use
