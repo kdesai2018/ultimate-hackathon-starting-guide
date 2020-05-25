@@ -1,29 +1,31 @@
 # Machine Learning (Keras, PyTorch, Tensorflow)
 
 ## What is Machine Learning and Why Would I Use it?
-Machine Learning is a broad umbrella for methods of developing artifial intelligence, which is generally used to find patterns in large data sets based on mathematical and statistical calculations. This becomes bery useful when a phenomena can not be modelled by a deterministic algorithm.   
+Machine Learning is a broad umbrella for methods of developing artificial intelligence, which is generally used to find patterns in large data sets based on mathematical and statistical calculations. This becomes very useful when a phenomena cannot be modeled by a deterministic algorithm.   
 
-In the context of a Hackathon, Machine Learning is designed to target a single problem with specific input parameters than can be consistently replicated on a large scale and thus, is most commonly used to develop an market solution tailored to a specific company challenge or a specific social problem. 
+Before proceeding with this guide, check out [this](https://docs.google.com/presentation/d/1EImakverhNq-WhJwd-WIx2H04ZnCyUxsFk-9UcKoubQ/edit?usp=sharing) presentation made by Freetail Hackers. It's a quick overview about what AI is and a couple useful subfields within this space.
 
-The great thing about Machine Learning, is that it is applicable to most modern day problems. This ranges from economics, where ML is being used to developing models to predict stock prices (quantative analysis, a very lucrative field), to the medical field, where ML is being used to analyze X-Rays to determine if a patient has cancer.
+In the context of a Hackathon, Machine Learning is designed to target a single problem with specific input parameters that can then be consistently replicated on a large scale and thus is most commonly used to develop an market solution tailored to a **specific company challenge or a specific social problem.** 
 
-Anything where normally we use our intution to predict a pattern, ML can be applied to do the work quicker and better!
+The great thing about Machine Learning is that it is applicable to most modern day problems. This ranges from economics, where ML is being used to developing models to predict stock prices (quantitative analysis, a very lucrative field), to the medical field, where ML is being used to analyze X-Rays to determine if a patient has cancer.
+
+ML can be applied to solve a problem faster and more efficiently anywhere we would normally use our intuition to predict a pattern!
 
 ## Example Projects
-Here are a couple of the cool ML hackathon projects as some inspiration to get started!
+Here are some cool ML hackathon projects as inspiration to get started!
 
 1. [NavAssistAI](https://devpost.com/software/navassistai) - This project won the Tensorflow World 2.0 Challenge, and attempts to help visually impaired individuals cross the street using machine learning. I like this project because its very applicable and usable in real life. 
 
 2. [Coughvid](https://devpost.com/software/coughvid-ai-based-app-for-covid-19-screening-using-coughing) - This project placed 3rd at LauzHack for COVID. It uses ML to analyze coughing sounds and symptoms to predict if a patient has COVID-19.
 
-3. [ColorMe](https://devpost.com/software/colorme-50fz68) - A unique project which usual Image Analysis to predict what color palettes for clothing would look best on the user.
+3. [ColorMe](https://devpost.com/software/colorme-50fz68) - A unique project which uses Image Analysis to predict what color palettes for clothing would look best on the user.
 
 4. [StickyAR](https://devpost.com/software/stickyar) - Fun game built at HackMIT that takes a more light-hearted approach to ML. These hackers used OpenCV to detect sticky notes in a frame, and let the end user play a game using those sticky notes!
 
 There are a lot more! Browse [devpost](https://devpost.com) to see more cool projects. 
 
 ## Tools and libraries to get you started
-If you're gonna do any kind of ML project, I'd highly recommend Python. Many common Python ML libraries such as Keras, PyTorch, and Tensorflow abstract alot of the process for you, so you can focus on the bigger picture! This is especially good for beginners who may not understand everything that is going on behind the scenes just yet. C++ and Java are also pretty popular options, but I can't speak to their usability.
+If you're gonna do any kind of ML project, I'd highly recommend Python. Many common Python ML libraries such as Keras, PyTorch, and Tensorflow abstract a lot of the process (math) for you so that you can focus on the bigger picture! This is especially good for beginners who may not understand everything that is going on behind the scenes just yet. C++ and Java are also pretty popular options, but I can't speak to their usability.
 
 Keras, PyTorch, and Tensorflow have a whole bunch of documentation out there for how to set them up, and how to use them. I'll link a couple python tutorials I found really useful down below. The best part about this library is that it works right out of the box (for the most part), allowing you to quickly move right on integrating it with the rest of the project.
 
@@ -65,8 +67,8 @@ Pros:
   
 Cons:
   - Long installation (You'll probably spend more time installing dependancies and libraries than actually working on your project)
-  - Needs large dataset (Machine Learning generally needs extremely large datasets to be accurate. In most cases, I have found myself       without enough resources or enough time to create a custom dataset. And it is usually disappointing when it doesn't correclt           predict in front of the judges)
-  - Reading thick documentation (Because of how powerful these libraries are, you will need to take some time to figure out which tools     are the ones you need and which ones you don't)
+  - Needs large dataset (Machine Learning generally needs extremely large datasets to be accurate. In most cases, I have found myself without enough resources or enough time to create a custom dataset. It is also usually disappointing when your model doesn't correctly predict the category in front of the judges)
+  - Reading thick documentation (Because of how powerful these libraries are, you will need to take some time to figure out which tools are the ones you need and which ones you don't)
 
 ## Takeaways
 Machine Learning is a really useful tool for many hackathon projects if used effectively. 
@@ -95,5 +97,4 @@ You can use either conda environments, or virtual environments. Conda is more st
 [conda](https://stackoverflow.com/questions/45421163/anaconda-vs-miniconda), but I'd recommend insalling the full anaconda package to make your life easier. 
 
 [setting up conda env](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/)
-
 
