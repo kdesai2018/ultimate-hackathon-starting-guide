@@ -1,7 +1,7 @@
 # Machine Learning (Keras, PyTorch, Tensorflow)
 
 ## What is Machine Learning and Why Would I Use it?
-Machine Learning is a broad umbrella for methods of developing artificial intelligence, which is generally used to find patterns in large data sets based on mathematical and statistical calculations. This becomes very useful when a phenomena cannot be modeled by a deterministic algorithm.   
+Machine Learning is a means of developing artificial intelligence, which is when a computer performs mathematical and statistical calculations to find patterns in large data sets. This becomes useful when datasets become too large for humans to analyze or patters become too obscure for humans to find.   
 
 Before proceeding with this guide, check out [this](https://docs.google.com/presentation/d/1EImakverhNq-WhJwd-WIx2H04ZnCyUxsFk-9UcKoubQ/edit?usp=sharing) presentation made by Freetail Hackers. It's a quick overview about what AI is and a couple useful subfields within this space.
 
@@ -11,7 +11,18 @@ The great thing about Machine Learning is that it is applicable to most modern d
 
 ML can be applied to solve a problem faster and more efficiently anywhere we would normally use our intuition to predict a pattern!
 
-## Example Projects
+## How do I know if I should use Machine Learning in my Project?
+
+It is important to keep in mind that ML is not a solution for every problem. Many times, there will be a way to develop a robust solution without needing to use ML. Here are the general questions you should be asking yourself to decide if ML is right for your project:
+
+1. Can I hard-code the rules? Many human tasks cannot be solved by using a simple rule-based solution, as there are usually a large number of factors that influence the outcome. A good example is determining if an email is spam or not; it is hard to claim that all spam emails follow a definitive rule. Thus, when the outcome depends on too many factors, Machine Learning should be considered as it is effective at accounting for a large number of factors.
+
+2. Can I easily scale without ML? Many times, an idea will work at a small scale, but becomes tedious at a large scale. Coming back to the spam email example, while you might be able to click through a hundred emails and sort which ones are spam, doing this for millions of emails would be quite unreasonable. Thus, if scaling your task is tedious, Machine Learning should be considered as it is effective at handling large-scale problems.
+
+If the answer to at least one of these questions is "No," Machine Learning might be the way to go. Some classic examples of such problems where machine learning is being applied today include: natural language processing, facial recognition, and image classification. If any of these sound interesting to you, feel free to go down a Google rabbit-hole and learn about these awesome applications!
+
+## Example and Projects
+
 Here are some cool ML hackathon projects as inspiration to get started!
 
 1. [NavAssistAI](https://devpost.com/software/navassistai) - This project won the Tensorflow World 2.0 Challenge, and attempts to help visually impaired individuals cross the street using machine learning. I like this project because its very applicable and usable in real life. 
@@ -35,11 +46,11 @@ Keras (Recommended for beginners and small datasets):
   - High level API (Abstracts things more)
   - Slower runtimes(Shouldn't matter too much in this context)
   - Simplest to use
-  - Least lines of code
+  - Least lines of code needed
   - Less accurate models
   - Simple models with minial debugging  
   
-Tensorflow (Recommended for experienced users and high performance models despite smaller datasets):
+Tensorflow (Recommended for experienced users who need high performance models despite smaller datasets):
   - High and Low level API's
   - Faster runtimes
   - Harder to use
@@ -47,7 +58,7 @@ Tensorflow (Recommended for experienced users and high performance models despit
   - Accurate models
   - Hard to debug  
   
- PyTorch (Recommended for machine learning gods and high performance models with large datasets):
+ PyTorch (Recommended for machine learning gods who need high performance models and have large datasets):
   - Low Level API
   - Faster runtimes
   - Hardest to use
@@ -57,7 +68,8 @@ Tensorflow (Recommended for experienced users and high performance models despit
   
 
 ## Pros and Cons
-While ML is indeed very flashy, it also has some not-so-flashy aspects, which I will cover so you can consider if incorporating ML into your project is a good fit  
+While ML is indeed very flashy, it also has some not-so-flashy aspects, which I will cover so you can consider if incorporating ML into your project is a good fit
+  
 Pros:
   - Very relevant in the field of software development
   - Very flashy
