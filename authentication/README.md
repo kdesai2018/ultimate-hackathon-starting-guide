@@ -4,7 +4,7 @@
 This tutorial will introduce the basics of authentication, implemented for both websites and mobile applications.  The code and ideas presented here **should only be used in a hackathon environment**.  In a production environment, most of the tatics listed here would not be secure enough, and may leave ways for determined hackers to access sensitive information.  The code here utilizes mostly Javascript and MongoDB.
 
 ## Basics
-
+Authentication is the process of validating users to ensure a user's sensitive information can only be accessed by them and only them.  
 Both systems of authentification utilize the same system to register users.  However, the implementation of login/logout will differ between platforms.   
 
 Registering users is a relatively simple process, mostly involving collecting all of the users data in some sort of form then inserting all of this data into the database.  However, there is one main issues: storing passwords.  Prior to storing the passwords, it is important to salt and hash them for the safety of the users.  ```bcrypt``` should take care of this process.  
@@ -17,5 +17,5 @@ For authentication with websites, we will rely on using node.js sessions (cookie
 
 ## Mobile Specific Authentication
 
-Mobile authentification adds a twist.  On mobile, node.js sessions will not work, thus we will rely on JWT (JSON Web Token) to facilitate authentification.  This token will be physically stored on the device (ex. ```async-storage``` for React Native), and will be sent to the server when any routes involving user sensitive information.  Upon validation of this token
+Mobile authentification adds a twist.  On mobile, node.js sessions will not work, thus we will rely on JWT (JSON Web Token) to facilitate authentification.  This token will be physically stored on the device (ex. ```async-storage``` for React Native), and will be sent to the server when any routes involving user sensitive information.  Upon validation of this token, the server will then be able to return user sensitive data.  Thus, it is important to treat authentification tokens as if there were passwords, as they essentially follow the same function.
 
