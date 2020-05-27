@@ -4,7 +4,8 @@
 This tutorial will introduce the basics of authentication, implemented for both websites and mobile applications.  The code and ideas presented here **should only be used in a hackathon environment**.  In a production environment, most of the tatics listed here would not be secure enough, and may leave ways for determined hackers to access sensitive information.  The code here utilizes mostly Javascript and MongoDB.
 
 ## Basics
-Authentication is the process of validating users to ensure a user's sensitive information can only be accessed by them and only them.  
+Authentication is the process of verifying the identity of users to protect their data.  The code presented here is used to create users, validate them (log in), access secure data, and log them out.  Authentication should only be added in cases where there are unique users each with their own, sensitive data or access to sensitive data.  For instance, suppose we had a website where some sort of administrator panel was necessary (like a hackathon registration website).  In this case, we would use authentication to ensure that a user trying to access administrator function is actually an administrator.  An example where authentication is not necessary is storing the high scores in a simple game (ex. Tetris).  Since none of the users are storing sensitive data nor able to access sensitive data, authentication may not be necessary in this case.  
+  
 Both systems of authentification utilize the same system to register users.  However, the implementation of login/logout will differ between platforms.   
 
 Registering users is a relatively simple process, mostly involving collecting all of the users data in some sort of form then inserting all of this data into the database.  However, there is one main issues: storing passwords.  Prior to storing the passwords, it is important to salt and hash them for the safety of the users.  ```bcrypt``` should take care of this process.  
