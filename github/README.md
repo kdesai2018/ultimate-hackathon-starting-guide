@@ -30,6 +30,25 @@ For my teams, we have one repo and everyone is added on as a [collaborator](http
 
 Remember to **pull** changes from the remote branch to your local copy whenever your teammate makes a change. The pull command pretty much just copies whatever changes have been made on the remote branch you are pulling from, onto your local device. This ensures that everyone has the most up to date version of the code, and no one is working on an already solved bug or code someone else has changed. 
 
+## How to setup a git repo
+1. Create remote repo
+2. Create local repo w/ the same name as remote repo
+3. Open terminal
+4. $ cd <PATH TO LOCAL REPO>
+5. $ touch README.md
+6. $ git init
+7. $ git add .
+8. $ git commit - m "initial commit"
+9. $ git remote add origin <REMOTE REPO>
+10. $ git push -u -f origin master
+11. $ git pull
+
+## How to continuously integrate your work with the remote branch on Github
+1. $ git add <file name>
+2. $ git commit -m "detailed commit message here"
+3. $ git push
+
+
 ## What are "Merge Conflicts" and how do I fix them?
 First of all, take a deep breath. While merge conflicts may look complex, they're actually caused by a pretty simple reason. This is when your teammate and you both push conflicting changes to the same branch. A couple cases:
 (You are "you" and your teammate is A)
