@@ -43,7 +43,7 @@ Remember to **pull** changes from the remote branch to your local copy whenever 
 10. $ git push -u -f origin master
 11. $ git pull
 
-## How to continuously integrate your work w/ remote
+## How to continuously integrate your work with the remote branch on Github
 1. $ git add <file name>
 2. $ git commit -m "<message>"
 3. $ git push
