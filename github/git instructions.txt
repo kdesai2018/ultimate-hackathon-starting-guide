@@ -1,0 +1,17 @@
+INITIALIZATION
+1. Create remote repo
+2. Create local repo w/ the same name as remote repo
+3. Open terminal
+4. $ cd <PATH TO LOCAL REPO>
+5. $ touch README.md
+6. $ git init
+7. $ git add .
+8. $ git commit - m "initial commit"
+9. $ git remote add origin <REMOTE REPO>
+10. $ git push -u -f origin master
+11. $ git pull
+
+CONTINUOUS
+1. $ git add <file name>
+2. $ git commit -m "<message>"
+3. $ git push
