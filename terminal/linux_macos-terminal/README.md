@@ -46,15 +46,15 @@ brew install <PACKAGE>: installs <PACKAGE> for macOS only
 
 # SYMBOLS/KEYWORDS
 _______________________________________________________
-- /: root directory
-- ~: user home directory
-- .: current working directory
-- ..: superdirectory of current working directory
-- *: all files w/i working directory
-- *.ext: all files w/i working directory w/ extension .ext
-- >: writes the command to an output file
-- <: reads input file into command
-- sudo: run command as root user
+- "/": root directory
+- "~": user home directory
+- ".": current working directory
+- "..": superdirectory of current working directory
+- "*": all files w/i working directory
+- "*.ext": all files w/i working directory w/ extension .ext
+- ">": writes the command to an output file
+- "<": reads input file into command
+- "sudo": run command as root user
 
 # HOW TO INTEGRATE THIS REFERENCE SHEET INTO TERMINAL
 _______________________________________________________
