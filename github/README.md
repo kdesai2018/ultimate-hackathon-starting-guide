@@ -45,7 +45,7 @@ Remember to **pull** changes from the remote branch to your local copy whenever 
 
 ## How to continuously integrate your work with the remote branch on Github
 1. $ git add <file name>
-2. $ git commit -m "<message>"
+2. $ git commit -m "detailed commit message here"
 3. $ git push
 
 
