@@ -29,7 +29,9 @@ apt install <PACKAGE>: installs <PACKAGE>
 apt update: updates software (run before you install anything)
 apt upgrade: installs newer versions of existing packages
 
+## Mac Homebrew
 brew install <PACKAGE>: installs <PACKAGE> for macOS only
+more info : https://brew.sh/
 
 # Symbols/Keywords
 _______________________________________________________
