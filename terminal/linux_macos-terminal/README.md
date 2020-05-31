@@ -24,6 +24,7 @@ A couple must-know commands:
 
 # Installing Packages
 _______________________________________________________
+## Linux Package Manager
 apt install <PACKAGE>: installs <PACKAGE>
 apt update: updates software (run before you install anything)
 apt upgrade: installs newer versions of existing packages
