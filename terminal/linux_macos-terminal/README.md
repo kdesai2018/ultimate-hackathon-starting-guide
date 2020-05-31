@@ -21,20 +21,6 @@ A couple must-know commands:
     - Example 1: `rm thisisatest.txt` -> this removes the text file you created with `touch` in the last example
     - Example 2: `rm -r this_is_a_folder` -> the `-r` flag means "recursive", and is necessary to delete folders. This command deletes the folder you created in a previous example. 
 
-# Using Makefiles
-_______________________________________________________
-in makefile:
-	tag:
-		command
-	
-	tag1:
-		command $(ARG)
-
-terminal: (w/o arguments)
-	$ make tag: executes commands under tag
-
-terminal: (w/ arguments)
-	$ make tag1 ARG=<VALUE>: executes commands under tag1 w/ specified arguments
 
 # Installing Packages
 _______________________________________________________
