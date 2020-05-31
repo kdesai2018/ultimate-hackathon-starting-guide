@@ -25,13 +25,14 @@ A couple must-know commands:
 # Installing Packages
 _______________________________________________________
 ## Linux Package Manager
-- apt install <PACKAGE>: installs <PACKAGE>
-- apt update: updates software (run before you install anything)
-- apt upgrade: installs newer versions of existing packages
+`apt` is the package manager for Linux. It comes pre-installed in most varieties of Linux and can be used to install useful packages. Check out [this](https://packages.ubuntu.com/) link for all packages you can install on Ubuntu.
+- `apt install <PACKAGE>`: installs <PACKAGE>
+- `apt update`: updates software (run before you install anything)
+- `apt upgrade`: installs newer versions of existing packages
 
 ## Mac Homebrew
-brew install <PACKAGE>: installs <PACKAGE> for macOS only
-more info : https://brew.sh/
+Brew is the package manager for MacOS. Install it following the instructions [here](https://brew.sh/)
+`brew install <PACKAGE>`: installs <PACKAGE> for macOS only
 
 # Symbols/Keywords
 _______________________________________________________
