@@ -1,7 +1,5 @@
 const express = require('express');
 const app = express();
-const path = require('path');
-
 
 const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
@@ -23,7 +21,7 @@ db.once('open', () => {
 });
 
 
-
+// Needed for custom routes
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
@@ -31,7 +29,6 @@ app.use(express.static('public'));
 // Render views
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
-
 
 const port = process.env.PORT || 3000;
 // Listen on requests only on a certain port
@@ -64,6 +61,7 @@ app.use((req, res, next) => {
     }
 });
 
+// Middleware
 function requireLogin(req, res, next) {
     if(req.session && req.session.userId) {
         return next();
@@ -90,7 +88,7 @@ app.get('/profile', requireLogin, (req, res) => {
 app.post('/register', (req, res) => {
     if(req.user) res.json({"error" : "user already logged in"});
     Users.findOne({'email' : req.body.email}, (err, foundUser) => {
-      if(err) console.log(err);  
+      if(err) console.log(err);
       if(foundUser != null)
       {
         res.json({"error" : "email already in use"});
@@ -108,7 +106,7 @@ app.post('/register', (req, res) => {
       }
     })
 });
-  
+
 app.post('/login', (req, res) => {
     Users.findOne({'email': req.body.email}, (err, user) => {
         if(err) console.log(err);

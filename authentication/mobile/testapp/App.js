@@ -15,7 +15,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { SERVER_URL } from 'react-native-dotenv'
 
 import Login from './views/screens/Login';
-import Profile from './views/screens/Profile'
+import Profile from './views/screens/Profile';
+import Register from './views/screens/Register';
 
 const Stack = createStackNavigator();
 
@@ -40,7 +41,7 @@ async function storeCurrUser(payload) {
   catch(e) {
     console.log(e)
   }
-} 
+}
 
 export default function App() {
   const initalState = {isLoading : true, isSignOut: false, authToken: null, user: null};
@@ -107,12 +108,16 @@ export default function App() {
       <NavigationContainer>
         <AuthProvider value={authContext}>
           <Stack.Navigator>
-              {state.authToken !== null ? 
+              {state.authToken !== null ?
               <>
                 <Stack.Screen name="My Profile" component={Profile} />
-              </>  
-              : 
-              <Stack.Screen name="Login" component={Login} />}
+              </>
+              :
+              <>
+                <Stack.Screen name="Login" component={Login} />
+                <Stack.Screen name="Register" component={Register} />
+              </>
+              }
           </Stack.Navigator>
         </AuthProvider>
       </NavigationContainer>
