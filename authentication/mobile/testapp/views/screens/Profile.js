@@ -10,7 +10,7 @@ export default function Profile({navigation}) {
 
     useEffect(() => {
         let subscribed = true;
-        let getReverse = async () => {
+        (async () => {
             let payload = {token: authToken};
             let url = new URL(SERVER_URL + "/backwards");
             Object.keys(payload).forEach(key => url.searchParams.append(key, payload[key]));
@@ -18,14 +18,13 @@ export default function Profile({navigation}) {
             .then((res) => res.json())
             .then((data) => {
                 if(subscribed) {
-                    if(data.message === undefined) {
+                    if(data.error === undefined) {
                         setReverse(data.backwards);
                         setLoading(false);
                     }
                 }
             })
-        }
-        getReverse();
+        })();
         return () => {subscribed = false;}
     },[])
     if(user === null) {

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {StatusBar, SafeAreaView, Text, TextInput, Button} from 'react-native';
 import { SERVER_URL} from 'react-native-dotenv';
+import { showAlert } from '../helpers';
 
 export default function Profile({navigation}) {
     const [username, setUsername] = useState("");
@@ -18,7 +19,7 @@ export default function Profile({navigation}) {
             },
             body: JSON.stringify(payload),
         }).then(res => res.json()).then( res => {
-            if(res.error === undefined) console.log(error);
+            if(res.error) showAlert("Error", res.error);
             else navigation.navigate("Login");
         })
     }

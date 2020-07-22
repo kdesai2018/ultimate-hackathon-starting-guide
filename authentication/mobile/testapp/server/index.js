@@ -1,7 +1,7 @@
 const express = require('express');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 const bodyParser= require('body-parser');
 
 const bcrypt = require('bcrypt');
@@ -55,7 +55,7 @@ app.post('/login', (req, res)=> {
       if(err) console.log(err);
       if(user === null)
       {
-        res.status(401).json({"message" : "Failed to log in"});
+        res.status(401).json({"error" : "Failed to log in"});
         return;
       }
       else
@@ -68,7 +68,7 @@ app.post('/login', (req, res)=> {
             }
             else
             {
-              res.status(401).json({"message" : "Failed to log in"});
+              res.status(401).json({"error" : "Failed to log in"});
             }
         })
       }
@@ -80,20 +80,20 @@ app.post('/login', (req, res)=> {
     console.log(req.query);
     let token = req.query.token;
     if(token === undefined) {
-      res.status(401).json({"message" : "no token"});
+      res.status(401).json({"error" : "no token"});
     }
     else {
       jwt.verify(token, SECRET_KEY, (err, decoded) => {
         if(err) console.log(err);
         if(decoded === undefined)
         {
-          res.status(401).json({"message" : "invalid token"});
+          res.status(401).json({"error" : "invalid token"});
         }
         let id = decoded.id;
         Users.findById(id, (err, user) => {
           if(err) console.log(err);
 
-          if(user == null) res.status(401).json({"message" : "invalid token"});
+          if(user == null) res.status(401).json({"error" : "invalid token"});
           else {
             let backwards = user.name.split("").reverse().join("")
             res.status(200).json({"backwards" : backwards});
