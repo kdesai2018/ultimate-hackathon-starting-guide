@@ -15,7 +15,10 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { SERVER_URL } from 'react-native-dotenv'
 
 import Login from './views/screens/Login';
-import Profile from './views/screens/Profile'
+import Profile from './views/screens/Profile';
+import Register from './views/screens/Register';
+
+import { showAlert } from './views/helpers';
 
 const Stack = createStackNavigator();
 
@@ -40,14 +43,14 @@ async function storeCurrUser(payload) {
   catch(e) {
     console.log(e)
   }
-} 
+}
 
 export default function App() {
   const initalState = {isLoading : true, isSignOut: false, authToken: null, user: null};
   const [state, dispatch] = useReducer(reducer, initalState);
   // handle authentication
   useEffect(() => {
-    let loadToken = async () => {
+    (async () => {
       try {
         const raw = await storage.get('@curr_user');
         if(raw) {
@@ -61,8 +64,7 @@ export default function App() {
       catch(e) {
         console.log(e)
       }
-    }
-    loadToken();
+    })();
   }, []);
 
   const authContext = useMemo(() => ({
@@ -82,11 +84,14 @@ export default function App() {
       .then((data) => {
           console.log(data);
           // Stores auth-token if successful
-          if(data.message === undefined) {
+          if(!data.error) {
             user = data.user;
             authToken = data.token;
             storeCurrUser({user, authToken});
             dispatch({type : "LOG_IN", authToken, user});
+          }
+          else {
+            showAlert("Error", data.error);
           }
       }).catch((err) => console.log(err));
     },
@@ -107,12 +112,16 @@ export default function App() {
       <NavigationContainer>
         <AuthProvider value={authContext}>
           <Stack.Navigator>
-              {state.authToken !== null ? 
+              {state.authToken !== null ?
               <>
                 <Stack.Screen name="My Profile" component={Profile} />
-              </>  
-              : 
-              <Stack.Screen name="Login" component={Login} />}
+              </>
+              :
+              <>
+                <Stack.Screen name="Login" component={Login} />
+                <Stack.Screen name="Register" component={Register} />
+              </>
+              }
           </Stack.Navigator>
         </AuthProvider>
       </NavigationContainer>

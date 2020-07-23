@@ -1,7 +1,7 @@
 const express = require('express');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 const bodyParser= require('body-parser');
 
 const bcrypt = require('bcrypt');
@@ -10,7 +10,7 @@ const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
 const SECRET_KEY = 'super secret key';
 
-
+// Set up database and collections
 const Users = require('./schema/User')
 
 mongoose.connect('mongodb://localhost/mobiletest', {useNewUrlParser: true , useUnifiedTopology: true});
@@ -21,7 +21,7 @@ db.once('open', () => {
   console.log("MongoDB database connection established successfully");
 });
 
-
+// Needed for custom routes
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -31,7 +31,7 @@ app.listen(port, () => {
 
 app.post('/register', (req, res) => {
   Users.findOne({'email' : req.body.email}, (err, foundUser) => {
-    if(err) console.log(err);  
+    if(err) console.log(err);
     if(foundUser != null)
     {
       res.json({"error" : "email already in use"});
@@ -55,7 +55,7 @@ app.post('/login', (req, res)=> {
       if(err) console.log(err);
       if(user === null)
       {
-        res.status(401).json({"message" : "Failed to log in"});
+        res.status(401).json({"error" : "Failed to log in"});
         return;
       }
       else
@@ -68,31 +68,32 @@ app.post('/login', (req, res)=> {
             }
             else
             {
-              res.status(401).json({"message" : "Failed to log in"});
+              res.status(401).json({"error" : "Failed to log in"});
             }
         })
       }
     })
   });
 
+  // This method was made simply to demonstrate a sensitive route
   app.get('/backwards', (req, res) => {
     console.log(req.query);
     let token = req.query.token;
     if(token === undefined) {
-      res.status(401).json({"message" : "no token"});
+      res.status(401).json({"error" : "no token"});
     }
     else {
       jwt.verify(token, SECRET_KEY, (err, decoded) => {
         if(err) console.log(err);
-        if(decoded === undefined) 
+        if(decoded === undefined)
         {
-          res.status(401).json({"message" : "invalid token"});
-        }    
+          res.status(401).json({"error" : "invalid token"});
+        }
         let id = decoded.id;
         Users.findById(id, (err, user) => {
           if(err) console.log(err);
-  
-          if(user == null) res.status(401).json({"message" : "invalid token"});
+
+          if(user == null) res.status(401).json({"error" : "invalid token"});
           else {
             let backwards = user.name.split("").reverse().join("")
             res.status(200).json({"backwards" : backwards});
