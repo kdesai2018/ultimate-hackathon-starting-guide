@@ -9,7 +9,7 @@ In the various folders, you will find tips and resources for a variety of topics
 If you are an absolute beginner, welcome to your first hackathon! If you want to learn about what to expect from a hackathon checkout the [hackathon logistics](https://github.com/kdesai2018/ultimate-hackathon-starting-guide/tree/master/hackathon-logistics) guide. On the technical side, we'd recommend checking out the [terminal](https://github.com/kdesai2018/ultimate-hackathon-starting-guide/blob/master/getting-started-terminal/README.md) guide first, and then moving on to the [Github starter guide](https://github.com/kdesai2018/ultimate-hackathon-starting-guide/blob/master/getting-started-github/README.md).
 
 ## Who made this?
-This resource was made by [Freetail Hackers](http://freetailhackers.com/) at the [University of Texas at Austin](utexas.edu). We are a multidisciplinary student organization organizes [HackTX](http://hacktx.com/) annually. :heart:
+This resource was made by [Freetail Hackers](http://freetailhackers.com/) at the [University of Texas at Austin](utexas.edu). We are a multidisciplinary student organization that organizes [HackTX](http://hacktx.com/) annually. :heart:
 
 ## What was the inspiration for this guide?
 Our entire team is currently quarantining at home. With this abundance of free time, we decided to create a tool that would be useful for hackathons attendees and organizers around the world. 
