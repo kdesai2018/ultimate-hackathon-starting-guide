@@ -16,7 +16,7 @@
     "@react-navigation/bottom-tabs": "^5.2.6",
     "@react-navigation/native": "^5.0.9",
     "@react-navigation/stack": "^5.1.1",
-    "bcrypt": "^4.0.1",
+    "bcrypt": "^5.0.0",
     "jsonwebtoken": "^8.5.1",
     "path": "^0.12.7",
     "react": "16.13.1",
