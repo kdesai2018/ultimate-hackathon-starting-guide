@@ -23,7 +23,7 @@
     "react-native": "0.63.1",
     "react-native-dotenv": "^0.2.0",
     "react-native-gesture-handler": "^1.6.0",
-    "react-native-reanimated": "^1.7.0",
+    "react-native-reanimated": "^2.10.0",
     "react-native-safe-area-context": "^0.7.3",
     "react-native-screens": "^2.2.0",
     "typescript": "^3.8.3"
