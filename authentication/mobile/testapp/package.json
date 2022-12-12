@@ -34,7 +34,7 @@
     "@react-native-community/eslint-config": "0.0.5",
     "babel-jest": "24.9.0",
     "eslint": "6.8.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "jest": "24.9.0",
     "metro-react-native-babel-preset": "0.56.4",
     "mongoose": "^5.9.10",
