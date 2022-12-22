@@ -17,7 +17,7 @@
     "@react-navigation/native": "^5.0.9",
     "@react-navigation/stack": "^5.1.1",
     "bcrypt": "^5.0.0",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "path": "^0.12.7",
     "react": "16.13.1",
     "react-native": "0.63.1",
